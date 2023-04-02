@@ -3,8 +3,8 @@ Vanguard|6|4
 Green|Male|Sword
 70|20|1
 
-Blessing of the Chaos Goddess||SPEC| If your Main Character has a Deployment Cost of 1, the Deployment Cost and Class Change Cost of this card are each reduced by 1 while this card is in your hand.
+Blessing of the Chaos Goddess| |SPEC| If your Main Character has a Deployment Cost of 1, the Deployment Cost and Class Change Cost of this card are each reduced by 1 while this card is in your hand.
 
-Divine Golden Blade||ACT||OPT| [Stack 1 "Ike" from your Retreat Area under this unit to Growth him] Until the end of your opponent's next turn, this unit gains +10 attack and acquires range 1-2.
+Divine Golden Blade| |ACT||OPT| [Stack 1 "Ike" from your Retreat Area under this unit to Growth him] Until the end of your opponent's next turn, this unit gains +10 attack and acquires range 1-2.
 
-Stalwarts Unite||AUTO| [|flip1|, Send 2 cards stacked underneath this unit to the Retreat Area] At the beginning of your Deployment Phase, you may pay the cost and if you do: Until the end of the turn, all <Green> cards in your hand with a Deployment Cost of 5 or higher have their Deployment Cost reduced by 2.
+GS*Stalwarts Unite| |AUTO| [|flip1|, Send 2 cards stacked underneath this unit to the Retreat Area] At the beginning of your Deployment Phase, you may pay the cost and if you do: Until the end of the turn, all <Green> cards in your hand with a Deployment Cost of 5 or higher have their Deployment Cost reduced by 2.

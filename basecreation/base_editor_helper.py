@@ -171,25 +171,31 @@ def skillname_text_creator(skillname, charwid, rowheight, rowextra, fontsize, co
         namesplit = skillname.split('*')
         skillicon = Image.open('skillheaders/'+namesplit[0]+'.png')
         x,y = skillicon.size
-        if y < (rowheight + rowextra):
-            ratio = (rowheight + rowextra)/y
-            skillicon = skillicon.resize((int(ratio * x),rowheight + rowextra))
-            x,y = skillicon.size
-        im = Image.new(mode = "RGB", size = (x + int(charwid*len(namesplit[1])) + 10, rowheight + rowextra), color=bgcol)
+        # if y < (rowheight + rowextra):
+        #     ratio = (rowheight + rowextra)/y
+        #     skillicon = skillicon.resize((int(ratio * x),rowheight + rowextra))
+        #     x,y = skillicon.size
+        print("GS ICON SIZE")
+        print(x)
+        im0 = Image.new(mode = "RGBA", size = (x + font.getsize(namesplit[1])[0]+5, rowheight-2), color=bgcol)
+        im = Image.new(mode = "RGBA", size = (x + font.getsize(namesplit[1])[0]+5, rowheight), color=(255,255,255))
+        im.paste(im0, (0,1), im0)
         draw = ImageDraw.Draw(im)
         im.paste(skillicon, (0,0), skillicon)
-        draw.text((x + 5,2), namesplit[1], (255, 255, 255), font=font)
+        draw.text((x + 5,1), namesplit[1], (255, 255, 255), font=font)
         if (x + int(charwid*len(namesplit[1])) + 10) > 1150:
-            im = im.resize((1150,rowheight+rowextra))
+            im = im.resize((1150,rowheight+rowextra)) 
         im.save("skillname.png", quality=95)
     else:
         #im = Image.new(mode = "RGB", size = (int(charwid*len(skillname)) + 10, rowheight + rowextra), color=bgcol)
         print('rowheight')
         print(rowheight)
-        im = Image.new(mode = "RGB", size = (font.getsize(skillname)[0],rowheight), color=bgcol)
+        im = Image.new(mode = "RGBA", size = (font.getsize(skillname)[0],rowheight), color=(255,255,255))
+        im0 = Image.new(mode = "RGBA", size = (font.getsize(skillname)[0],rowheight-2), color=bgcol)
+        im.paste(im0, (0,1), im0)
         draw = ImageDraw.Draw(im)
         #draw.text((5,2), skillname, (255, 255, 255), font=font)
-        draw.text((0,0), skillname, (255, 255, 255), font=font)
+        draw.text((0,1), skillname, (255, 255, 255), font=font)
         print(int(font.getsize(skillname)[0]) + 20)
         if (int(font.getsize(skillname)[0]) + 20) > 1150:
             print('enter')
@@ -247,3 +253,92 @@ def get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font):
             rows = rows + 1
     print(rows)
     return rows
+
+def drawChar(draw, xpos, ypos, inpchar, font):
+    # layer 1
+    draw.text((xpos, ypos), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos+1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos+1), inpchar, font=font, fill=(255,255,255))
+    # layer 2
+    draw.text((xpos-2, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-2, ypos+1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos+1), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-1, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos+2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos+2), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-2, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-2, ypos+2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos+2), inpchar, font=font, fill=(255,255,255))
+    # layer 3
+    draw.text((xpos-3, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-3, ypos+2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos+2), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-2, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-2, ypos+3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos+3), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-3, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-3, ypos+1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos+1), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-1, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos+3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos+3), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-3, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-3, ypos+3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos+3), inpchar, font=font, fill=(255,255,255))
+    # layer 4
+    draw.text((xpos-4, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-4, ypos+2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos+2), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-2, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-2, ypos+4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos+4), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-4, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-4, ypos+1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos+1), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-1, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos+4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos+4), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-4, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos-3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-4, ypos+3), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos+3), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-3, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-3, ypos+4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+3, ypos+4), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos-4, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos-4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-4, ypos+4), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+4, ypos+4), inpchar, font=font, fill=(255,255,255))
+    # writing
+    draw.text((xpos, ypos), inpchar, font=font, fill=(0,0,0))
+    #draw.text((xpos-1, ypos-1), inpchar, font=font, fill=(0,0,0))
+    #draw.text((xpos+1, ypos-1), inpchar, font=font, fill=(0,0,0))
+    #draw.text((xpos-1, ypos+1), inpchar, font=font, fill=(0,0,0))
+    #draw.text((xpos+1, ypos+1), inpchar, font=font, fill=(0,0,0))

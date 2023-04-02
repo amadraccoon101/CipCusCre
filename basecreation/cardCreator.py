@@ -1,5 +1,5 @@
 from PIL import Image, ImageFont, ImageDraw, ImageFilter
-from base_editor_helper import color_info, skillname_text_creator, get_rows
+from base_editor_helper import color_info, skillname_text_creator, get_rows, drawChar
 
 def card_creator(inp):
     ###############################################################################################################
@@ -47,7 +47,7 @@ def card_creator(inp):
     supskl1 = None
     supskl2 = None
     while nextline and not isSupSkl:
-        if nextline[0] is '|':
+        if nextline[0] == '|':
             isSupSkl = True
         else:
             skills.append(nextline.strip())
@@ -57,7 +57,7 @@ def card_creator(inp):
         supskl = 1
         nextline = f.readline()
         if nextline:
-            if nextline[0] is '|':
+            if nextline[0] == '|':
                 supskl2 = nextline.strip()
                 supskl = 2
     #print(skills)
@@ -143,50 +143,50 @@ def card_creator(inp):
     #Create Cost Base
     ###############################################################################################################
     #attack
-    title_font = ImageFont.truetype('cambriaz.ttf', 155)
+    # title_font = ImageFont.truetype('cambriaz.ttf', 155)
     bot = base.copy()
-    image_editable = ImageDraw.Draw(bot)
-    if len(atk) < 2:
-        image_editable.text((loc['x']['atk']+33,loc['y']['atk']), atk, (255, 255, 255), font=title_font)
-    elif len(atk) > 2:
-        title_font = ImageFont.truetype('cambriaz.ttf', 145)
-        image_editable.text((loc['x']['atk']-40,loc['y']['atk']), atk, (255, 255, 255), font=title_font)
-    else:
-        image_editable.text((loc['x']['atk'],loc['y']['atk']), atk, (255, 255, 255), font=title_font)
-    #support
-    title_font = ImageFont.truetype('cambriaz.ttf', 135)
-    if len(sup) < 2:
-        image_editable.text((loc['x']['sup']+30,loc['y']['sup']), sup, (255, 255, 255), font=title_font)
-    else:
-        image_editable.text((loc['x']['sup'],loc['y']['sup']), sup, (255, 255, 255), font=title_font)
-    #range
-    bot.paste(rangePic, (loc['x']['range'], loc['y']['range']))
-    #title
-    title_font = ImageFont.truetype('georgiab.ttf', 45)
-    image_editable.text((loc['x']['title'],loc['y']['title']), title, fontColor, font=title_font)
-    #name
-    title_font = ImageFont.truetype('georgiab.ttf', 70)
-    image_editable.text((loc['x']['name']-(len(name)*45),loc['y']['name']), name, fontColor, font=title_font)
-    #class
-    title_font = ImageFont.truetype('timesbi.ttf', 48)
-    image_editable.text((loc['x']['class'],loc['y']['class']), classtxt, (0, 0, 0), font=title_font)
-    ### ^^^ POTENTIALLY DO THIS MANUALLY ^^^ ###
+    # image_editable = ImageDraw.Draw(bot)
+    # if len(atk) < 2:
+    #     image_editable.text((loc['x']['atk']+33,loc['y']['atk']), atk, (255, 255, 255), font=title_font)
+    # elif len(atk) > 2:
+    #     title_font = ImageFont.truetype('cambriaz.ttf', 145)
+    #     image_editable.text((loc['x']['atk']-40,loc['y']['atk']), atk, (255, 255, 255), font=title_font)
+    # else:
+    #     image_editable.text((loc['x']['atk'],loc['y']['atk']), atk, (255, 255, 255), font=title_font)
+    # #support
+    # title_font = ImageFont.truetype('cambriaz.ttf', 135)
+    # if len(sup) < 2:
+    #     image_editable.text((loc['x']['sup']+30,loc['y']['sup']), sup, (255, 255, 255), font=title_font)
+    # else:
+    #     image_editable.text((loc['x']['sup'],loc['y']['sup']), sup, (255, 255, 255), font=title_font)
+    # #range
+    # bot.paste(rangePic, (loc['x']['range'], loc['y']['range']))
+    # #title
+    # title_font = ImageFont.truetype('georgiab.ttf', 45)
+    # image_editable.text((loc['x']['title'],loc['y']['title']), title, fontColor, font=title_font)
+    # #name
+    # title_font = ImageFont.truetype('georgiab.ttf', 70)
+    # image_editable.text((loc['x']['name']-(len(name)*45),loc['y']['name']), name, fontColor, font=title_font)
+    # #class
+    # title_font = ImageFont.truetype('timesbi.ttf', 48)
+    # image_editable.text((loc['x']['class'],loc['y']['class']), classtxt, (0, 0, 0), font=title_font)
+    # ### ^^^ POTENTIALLY DO THIS MANUALLY ^^^ ###
 
-    bot.save("output/test.png", quality=95)
+    # bot.save("output/test.png", quality=95)
 
     ###############################################################################################################
     ###############################################################################################################
     #Create Cost Base
     ###############################################################################################################
-    top = costbase.copy()
-    image_editable = ImageDraw.Draw(top)
-    #deployment cost
-    title_font = ImageFont.truetype('cambriaz.ttf', 155)
-    image_editable.text((loc['x']['deployCost'],loc['y']['deployCost']), cost, (255, 255, 255), font=title_font)
-    #cc cost
-    title_font = ImageFont.truetype('cambriaz.ttf', 130)
-    image_editable.text((loc['x']['classChange'],loc['y']['classChange']), cc, ccFontColor, font=title_font)
-    top.save("output/test2.png", quality=95)
+    # top = costbase.copy()
+    # image_editable = ImageDraw.Draw(top)
+    # #deployment cost
+    # title_font = ImageFont.truetype('cambriaz.ttf', 155)
+    # image_editable.text((loc['x']['deployCost'],loc['y']['deployCost']), cost, (255, 255, 255), font=title_font)
+    # #cc cost
+    # title_font = ImageFont.truetype('cambriaz.ttf', 130)
+    # image_editable.text((loc['x']['classChange'],loc['y']['classChange']), cc, ccFontColor, font=title_font)
+    # top.save("output/test2.png", quality=95)
 
     ###############################################################################################################
     ###############################################################################################################
@@ -198,17 +198,17 @@ def card_creator(inp):
     w2, h2 = bot.size
 
     output = full.copy()
-    output.paste(bot, (0, h - h2), bot)
+    #output.paste(bot, (0, h - h2), bot)
 
-    output.paste(top, (0, 0), top)
+    #output.paste(top, (0, 0), top)
 
     #attributes
     y = 470
     i = 0
-    for a in attr:
-        atrpic = Image.open('attributes/' + a + '.png')
-        output.paste(atrpic, (29, y))
-        y = y + 97
+    # for a in attr:
+    #     atrpic = Image.open('attributes/' + a + '.png')
+    #     output.paste(atrpic, (29, y))
+    #     y = y + 97
 
 
     ### adding the skills
@@ -225,7 +225,7 @@ def card_creator(inp):
     botx, boty = bot.size
     bgcx, bgcy = output.size
     skillx = loc['x']['atk']
-    skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra) + 100
+    skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra) + 50
     skilltitle = False
     #font = ImageFont.truetype('Cousine-Regular.ttf', 40)
 
@@ -233,23 +233,27 @@ def card_creator(inp):
     sklcnt = 0
     ypos = skilly
     for i in skills:
-        if i is not '':
+        if i != '':
             xpos = skillx
             skilltext = i.split('|')
             idx = 0
             while idx < len(skilltext):
                 #print(idx)
-                if idx is 0:
+                if idx == 0:
                     skillname_text_creator(skilltext[0], charwid, rowheight, rowextra, fontsize, 'default')
-                    if '*' not in skilltext[0]:
-                        imsklstrt = Image.open('leftSkl.png', mode = "r")
-                        output.paste(imsklstrt, (xpos,ypos), imsklstrt)
                     imskl = Image.open('skillname.png', mode = "r")
-                    output.paste(imskl, (xpos+10,ypos))
                     imsklend = Image.open('rightSkl.png', mode = "r")
+                    imsklstrt = Image.open('leftSkl.png', mode = "r")
                     x,y = imskl.size
-                    output.paste(imsklend, (xpos+x+10,ypos), imsklend)
-                    xpos = xpos + x + 20
+                    if '*' not in skilltext[0]:
+                        output.paste(imsklstrt, (xpos,ypos), imsklstrt)
+                        output.paste(imskl, (xpos+10,ypos))
+                        output.paste(imsklend, (xpos+x+10,ypos), imsklend)
+                        xpos = xpos + x + 20
+                    else:
+                        output.paste(imskl, (xpos,ypos))
+                        output.paste(imsklend, (xpos+x,ypos), imsklend)
+                        xpos = xpos + x + 10
                     ypos = ypos + rowextra
                     #print(ypos)
                 elif skilltext[idx].lower() in attributes:
@@ -274,13 +278,15 @@ def card_creator(inp):
                         xpos = skillx
                         ypos = ypos + rowheight
                         #print(ypos)
-                        output.paste(imskl, (xpos,ypos), imskl)
+                        if y == 30:     # for smaller images
+                            output.paste(imskl, (xpos,ypos + 10), imskl)
+                        else:
+                            output.paste(imskl, (xpos,ypos), imskl)
                         xpos = xpos + x
                     else:
-                        if y >= 44:
-                            output.paste(imskl, (xpos - x,ypos), imskl)
+                        if y == 30:     # for smaller images
+                            output.paste(imskl, (xpos - x,ypos + 10), imskl)
                         else:
-                            #output.paste(imskl, (xpos - x,ypos + int((rowheight - y)/2)), imskl)
                             output.paste(imskl, (xpos - x,ypos), imskl)
                     ypos = ypos + rowextra
                 elif skilltext[idx].lower() in skillatr:
@@ -316,186 +322,14 @@ def card_creator(inp):
                             ypos = ypos + rowheight
 
                             draw = ImageDraw.Draw(output)
-                            # layer 1
-                            draw.text((xpos, ypos), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            # layer 2
-                            draw.text((xpos-2, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            # layer 3
-                            draw.text((xpos-3, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            # layer 4
-                            draw.text((xpos-4, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            # writing
-                            draw.text((xpos, ypos), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos-1, ypos-1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos+1, ypos-1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos-1, ypos+1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos+1, ypos+1), strskl[j], font=font, fill=(0,0,0))
+                            drawChar(draw, xpos, ypos, strskl[j], font)
                             xpos = xpos + int(font.getsize(strskl[j])[0])
                             #print(ypos)
                         else:
                             xpos = xpos - int(font.getsize(strskl[j])[0])
 
                             draw = ImageDraw.Draw(output)
-                            # layer 1
-                            draw.text((xpos, ypos), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            # layer 2
-                            draw.text((xpos-2, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            # layer 3
-                            draw.text((xpos-3, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            # layer 4
-                            draw.text((xpos-4, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+2), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+2), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-2, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-2, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+2, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+1), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+1), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-1, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-1, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+1, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+3), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+3), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-3, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-3, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+3, ypos+4), strskl[j], font=font, fill=(255,255,255))
-
-                            draw.text((xpos-4, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos-4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos-4, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            draw.text((xpos+4, ypos+4), strskl[j], font=font, fill=(255,255,255))
-                            # writing
-                            draw.text((xpos, ypos), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos-1, ypos-1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos+1, ypos-1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos-1, ypos+1), strskl[j], font=font, fill=(0,0,0))
-                            #draw.text((xpos+1, ypos+1), strskl[j], font=font, fill=(0,0,0))
+                            drawChar(draw, xpos, ypos, strskl[j], font)
                             xpos = xpos + int(font.getsize(strskl[j])[0])
                         # accounting for the space after each word
                         xpos = xpos + charwid
@@ -515,11 +349,11 @@ def card_creator(inp):
     ###############################################################################################################
     #Add Card Image
     ###############################################################################################################
-    bgc = Image.open("Ike.jpg")
+    bgc = Image.open("InputImages/Ike6_4.png")
 
     bgc.paste(output, (0,0), output)
 
-    bgc.save("output/imgoutput.png", quality=95)
+    bgc.save("output/Ike6_4.png", quality=95)
 
 
 
