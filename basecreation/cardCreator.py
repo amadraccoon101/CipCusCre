@@ -219,7 +219,7 @@ def card_creator(inp):
     charwid = 24
     rowheight = 40
     rowextra = 4
-    rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font)
+    rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, 1150)
 
     # set up space on the card for effects
     botx, boty = bot.size
@@ -259,7 +259,7 @@ def card_creator(inp):
                 elif skilltext[idx].lower() in attributes:
                     xpos = xpos - charwid
                     skltxt = skilltext[idx].lower()
-                    imskl = Image.open('icons/'+ skltxt +'.png')
+                    imskl = Image.open('icons_big/'+ skltxt +'.png')
                     x,y = imskl.size
                     # if y > rowheight:
                     #     #print(y)

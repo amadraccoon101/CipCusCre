@@ -21,7 +21,7 @@ promo = False
 if len(line2) > 2:
     cc = line2[2].strip()
     promo = True
-    print(cc)
+    #print(cc)
 #    print(classtxt + ', ' + cost + '/' + cc)
 #else:
 #    print(classtxt + ', ' + cost)
@@ -81,7 +81,7 @@ attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon
 actions = ['flip1','flip2','flip3','flip4','flip5','tap']
 ###############################################################################################################
 
-full = Image.open('attributes/full.png')
+full = Image.open('attributes/full2.png')
 
 output = full.copy()
 #output.paste(bot, (0, h - h2), bot)
@@ -100,18 +100,21 @@ i = 0
 ### adding the skills
 # line character limit 60, pixel length is 1090
 # get rows
-fontsize = 10
+fontsize = 9
 font = ImageFont.truetype('georgiab.ttf', fontsize)
-charwid = 10
+charwid = 8
 rowheight = 12
-rowextra = 1
-rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font)
+rowextra = 2
+rowlen = 282
+rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, rowlen-25)
+print("ROWS:")
+print(rows)
 
 # set up space on the card for effects
 boty = 100
 bgcx, bgcy = output.size
 skillx = 25
-skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra) + 50
+skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra)
 skilltitle = False
 #font = ImageFont.truetype('Cousine-Regular.ttf', 40)
 
@@ -133,13 +136,13 @@ for i in skills:
                 x,y = imskl.size
                 if '*' not in skilltext[0]:
                     output.paste(imsklstrt, (xpos,ypos), imsklstrt)
-                    output.paste(imskl, (xpos+10,ypos))
-                    output.paste(imsklend, (xpos+x+10,ypos), imsklend)
-                    xpos = xpos + x + 20
+                    output.paste(imskl, (xpos+3,ypos))
+                    output.paste(imsklend, (xpos+x+3,ypos), imsklend)
+                    xpos = xpos + x + 6
                 else:
                     output.paste(imskl, (xpos,ypos))
                     output.paste(imsklend, (xpos+x,ypos), imsklend)
-                    xpos = xpos + x + 10
+                    xpos = xpos + x + 3
                 ypos = ypos + rowextra
                 #print(ypos)
             elif skilltext[idx].lower() in attributes:
@@ -160,7 +163,7 @@ for i in skills:
                 #     x,y = imskl.size
                 xpos = xpos + x
                 ypos = ypos - rowextra
-                if xpos > 1350:
+                if xpos > rowlen:
                     xpos = skillx
                     ypos = ypos + rowheight
                     #print(ypos)
@@ -190,7 +193,7 @@ for i in skills:
                     imskl = imskl.resize((int(ratio * x),rowheight))
                     x,y = imskl.size
                 xpos = xpos + x
-                if xpos > 1350:
+                if xpos > rowlen:
                     xpos = skillx
                     ypos = ypos + rowheight
                     #print(ypos)
@@ -202,21 +205,21 @@ for i in skills:
                 strskl = skilltext[idx].split(' ')
                 j = 0
                 while j < len(strskl):
-                    xpos = xpos + int(font.getsize(strskl[j])[0])
-                    if xpos > 1350:
+                    xpos = xpos + int(font.getlength(strskl[j]))
+                    if xpos > rowlen:
                         xpos = skillx
                         ypos = ypos + rowheight
 
                         draw = ImageDraw.Draw(output)
                         drawChar(draw, xpos, ypos, strskl[j], font)
-                        xpos = xpos + int(font.getsize(strskl[j])[0])
+                        xpos = xpos + int(font.getlength(strskl[j]))
                         #print(ypos)
                     else:
-                        xpos = xpos - int(font.getsize(strskl[j])[0])
+                        xpos = xpos - int(font.getlength(strskl[j]))
 
                         draw = ImageDraw.Draw(output)
                         drawChar(draw, xpos, ypos, strskl[j], font)
-                        xpos = xpos + int(font.getsize(strskl[j])[0])
+                        xpos = xpos + int(font.getlength(strskl[j]))
                     # accounting for the space after each word
                     xpos = xpos + charwid
                     j = j + 1
