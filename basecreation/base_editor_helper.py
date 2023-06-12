@@ -255,11 +255,22 @@ def get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, r
 def drawChar(draw, xpos, ypos, inpchar, font):
     # layer 1
     draw.text((xpos, ypos), inpchar, font=font, fill=(255,255,255))
+
+    draw.text((xpos, ypos-1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos, ypos+1), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-1, ypos), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+1, ypos), inpchar, font=font, fill=(255,255,255))
+
     draw.text((xpos-1, ypos-1), inpchar, font=font, fill=(255,255,255))
     draw.text((xpos+1, ypos-1), inpchar, font=font, fill=(255,255,255))
     draw.text((xpos-1, ypos+1), inpchar, font=font, fill=(255,255,255))
     draw.text((xpos+1, ypos+1), inpchar, font=font, fill=(255,255,255))
     # layer 2
+    draw.text((xpos, ypos-2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos, ypos+2), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos-2, ypos), inpchar, font=font, fill=(255,255,255))
+    draw.text((xpos+2, ypos), inpchar, font=font, fill=(255,255,255))
+
     draw.text((xpos-2, ypos-1), inpchar, font=font, fill=(255,255,255))
     draw.text((xpos+2, ypos-1), inpchar, font=font, fill=(255,255,255))
     draw.text((xpos-2, ypos+1), inpchar, font=font, fill=(255,255,255))

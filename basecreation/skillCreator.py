@@ -68,7 +68,7 @@ if isSupSkl:
 ###############################################################################################################
 #Constants
 ###############################################################################################################
-skillatr = ['lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
+skillatr = ['lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','gs','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
 skilltypes = ['act','auto','cont','bond','spec','supp','hand']
 
 attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon','dragonstone','knife',
@@ -102,7 +102,7 @@ i = 0
 # get rows
 fontsize = 9
 font = ImageFont.truetype('georgiab.ttf', fontsize)
-charwid = 8
+charwid = 6
 rowheight = 12
 rowextra = 2
 rowlen = 282
@@ -138,11 +138,11 @@ for i in skills:
                     output.paste(imsklstrt, (xpos,ypos), imsklstrt)
                     output.paste(imskl, (xpos+3,ypos))
                     output.paste(imsklend, (xpos+x+3,ypos), imsklend)
-                    xpos = xpos + x + 6
+                    xpos = xpos + x + 18
                 else:
                     output.paste(imskl, (xpos,ypos))
                     output.paste(imsklend, (xpos+x,ypos), imsklend)
-                    xpos = xpos + x + 3
+                    xpos = xpos + x + 15
                 ypos = ypos + rowextra
                 #print(ypos)
             elif skilltext[idx].lower() in attributes:
