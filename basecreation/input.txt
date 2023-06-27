@@ -3,8 +3,8 @@ Vanguard|6|4
 Green|Male|Sword
 70|20|1
 
-Divine Golden Blade|ACT| |OPT| [Stack 1 "Ike" from your Retreat Area under this unit to Growth him] Until the end of your opponent's next turn, this unit gains +10 attack and acquires range 1-2.
+King’s War Cry|CONT| During your turn, all |Fang| allies with a Deployment Cost of 4 or lower gain +10 attack.
 
-Stalwarts Unite|AUTO| When this unit uses a |GS|, choose 1 ally. Until the end of the turn, that ally gains +10 attack.
+*GS*Royal Command|ACT| |OPT| [Send 1 card stacked underneath this unit to the Retreat Area] Choose 1 |Fang| card with a Deployment Cost of 4 or lower from your hand and deploy them. This skill only activates if you have 5 or more Bond Cards.
 
-Eternal Bond|CONT| This unit acquires all |GS| possessed by other allies. However, if there are multiple skills with the same skill name, he may only have 1 of those.
+Hawk King’s Pride|SPEC| This card cannot be stacked on top of a "Tibarn" from your hand to Level Up him as the result of a skill's effect.
