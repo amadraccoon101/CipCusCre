@@ -100,9 +100,9 @@ i = 0
 ### adding the skills
 # line character limit 60, pixel length is 1090
 # get rows
-fontsize = 9
+fontsize = 8
 font = ImageFont.truetype('georgiab.ttf', fontsize)
-charwid = 6
+charwid = 4
 rowheight = 12
 rowextra = 2
 rowlen = 282
@@ -163,6 +163,7 @@ for i in skills:
                 #     x,y = imskl.size
                 xpos = xpos + x
                 ypos = ypos - rowextra
+                print(skilltext[idx].lower())
                 if xpos > rowlen:
                     xpos = skillx
                     ypos = ypos + rowheight
@@ -170,13 +171,13 @@ for i in skills:
                     if y == 30:     # for smaller images
                         output.paste(imskl, (xpos,ypos + 10), imskl)
                     else:
-                        output.paste(imskl, (xpos,ypos), imskl)
+                        output.paste(imskl, (xpos,ypos + 1), imskl)
                     xpos = xpos + x
                 else:
                     if y == 30:     # for smaller images
-                        output.paste(imskl, (xpos - x,ypos + 10), imskl)
+                        output.paste(imskl, (xpos - x, ypos + 10), imskl)
                     else:
-                        output.paste(imskl, (xpos - x,ypos), imskl)
+                        output.paste(imskl, (xpos - x, ypos), imskl)
                 ypos = ypos + rowextra
             elif skilltext[idx].lower() in skillatr:
                 xpos = xpos - charwid

@@ -3,8 +3,6 @@ Vanguard|6|4
 Green|Male|Sword
 70|20|1
 
-King’s War Cry|CONT| During your turn, all |Fang| allies with a Deployment Cost of 4 or lower gain +10 attack.
+Heaven Rending Swords |AUTO| [|flip2|] When this unit is deployed, you may pay the cost and if you do: Until this unit leaves the battlefield, this unit gains +30 attack and acquires range 1-2 and until the end of the turn, she acquires the following skill: “|CONT| If an enemy evades this unit's attack, your opponent sends 2 cards with the same Unit Name to the Retreat Area instead of 1.”
 
-*GS*Royal Command|ACT| |OPT| [Send 1 card stacked underneath this unit to the Retreat Area] Choose 1 |Fang| card with a Deployment Cost of 4 or lower from your hand and deploy them. This skill only activates if you have 5 or more Bond Cards.
-
-Hawk King’s Pride|SPEC| This card cannot be stacked on top of a "Tibarn" from your hand to Level Up him as the result of a skill's effect.
+Blazing Twin Blades |AUTO| |OPT| [|flip1|] When this unit’s attack destroys an enemy, if this unit has used “Heaven Rending Swordsmanship”, you may pay the cost and if you do: Destroy all enemies.
