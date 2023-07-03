@@ -100,12 +100,12 @@ i = 0
 ### adding the skills
 # line character limit 60, pixel length is 1090
 # get rows
-fontsize = 8
+fontsize = 9
 font = ImageFont.truetype('georgiab.ttf', fontsize)
 charwid = 4
 rowheight = 12
 rowextra = 2
-rowlen = 282
+rowlen = 290
 rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, rowlen-25)
 print("ROWS:")
 print(rows)
@@ -113,7 +113,7 @@ print(rows)
 # set up space on the card for effects
 boty = 100
 bgcx, bgcy = output.size
-skillx = 25
+skillx = 18
 skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra)
 skilltitle = False
 #font = ImageFont.truetype('Cousine-Regular.ttf', 40)

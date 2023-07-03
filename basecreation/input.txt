@@ -3,6 +3,8 @@ Vanguard|6|4
 Green|Male|Sword
 70|20|1
 
-Heaven Rending Swords |AUTO| [|flip2|] When this unit is deployed, you may pay the cost and if you do: Until this unit leaves the battlefield, this unit gains +30 attack and acquires range 1-2 and until the end of the turn, she acquires the following skill: “|CONT| If an enemy evades this unit's attack, your opponent sends 2 cards with the same Unit Name to the Retreat Area instead of 1.”
+Progenitor of Dawn|SPEC| While an ally has 7 or more cards in their stack, the Deployment Cost of this card in your hand becomes 1.
 
-Blazing Twin Blades |AUTO| |OPT| [|flip1|] When this unit’s attack destroys an enemy, if this unit has used “Heaven Rending Swordsmanship”, you may pay the cost and if you do: Destroy all enemies.
+Holy Empress|AUTO| [|flip2|] When this unit is deployed during your Second Deployment Phase, you may pay the cost and if you do: Destroy all non-Main Character enemies.
+
+Blazing Twin Blades|CONT| While this unit is in the Front Line, this unit gains +10 attack and acquires 1-2 range.
