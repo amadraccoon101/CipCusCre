@@ -138,11 +138,11 @@ for i in skills:
                     output.paste(imsklstrt, (xpos,ypos), imsklstrt)
                     output.paste(imskl, (xpos+3,ypos))
                     output.paste(imsklend, (xpos+x+3,ypos), imsklend)
-                    xpos = xpos + x + 18
+                    xpos = xpos + x + 12
                 else:
                     output.paste(imskl, (xpos,ypos))
                     output.paste(imsklend, (xpos+x,ypos), imsklend)
-                    xpos = xpos + x + 15
+                    xpos = xpos + x + 12
                 ypos = ypos + rowextra
                 #print(ypos)
             elif skilltext[idx].lower() in attributes:
