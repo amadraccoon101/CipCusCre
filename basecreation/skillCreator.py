@@ -1,5 +1,5 @@
-from PIL import Image, ImageFont, ImageDraw, ImageFilter
-from base_editor_helper import color_info, skillname_text_creator, get_rows, drawChar   
+from PIL import Image, ImageFont, ImageDraw
+from base_editor_helper import skillname_text_creator, get_rows, drawChar   
 
 
 ###############################################################################################################
