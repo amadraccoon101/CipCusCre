@@ -1,6 +1,6 @@
 from skillCreator import createSkills
 
-f = open("input.txt", "r", encoding="utf-8")
+f = open("inputAM02.txt", "r", encoding="utf-8")
 
 nextline = f.readline()
 while nextline:

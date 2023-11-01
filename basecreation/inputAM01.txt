@@ -1,0 +1,143 @@
+AM01-01
+true
+Yune’s Chosen |ACT| |OPT| [|flip2|] Choose 1 |Green| card with the same Unit Name as your Main Character from your hand, and place it on top of your Main Character to Level Up them.
+Chaos Blessing |CONT| All |Green| allies may also be Supported by Support Cards with the same Unit Name as themselves.
+To Dwell Within Hearts |SPEC| When this card is sent to the Boundless Area by “Yune’s Chosen”, if your Main Character does not possess “Chaos Blessing”, then until the end of the game, that Main Character acquires “Chaos Blessing”.
+---------------
+AM01-02
+true
+Spymaster's Cunning |AUTO| |OPT| When this unit attacks, reveal the top 4 cards of your opponent's Deck. Choose up to 2 cards from among the revealed cards. Your opponent places the chosen cards on top of their Deck in the order of your choosing, then sends the remainder to the Retreat Area.
+Raven's Wiles |AUTO| |OPT| [|flip1|] When a card is sent from your opponent’s Deck to the Retreat Area, you may pay the cost and if you do: Draw 1 card.
+Maelstrom |ACT| |OPT| [Send 1 card from your hand to the Retreat Area] Choose 1 enemy and move them.
+---------------
+AM01-03
+false
+Advisor to the Raven King |AUTO| At the beginning of your opponent’s turn, if you have an allied “Naesala”, reveal the topmost card of your opponent's Deck. You may send it to the Retreat Area.
+Raven Elder’s Guile |AUTO| [|flip1|] When a card is sent to your opponent’s Retreat Area from their Deck, you may pay the cost and if you do: Choose 1 enemy with 80 or higher attack. Until the end of the turn, that enemy loses -10 attack.
+---------------
+AM01-04
+false
+Demi Band |CONT| During your turn, this unit gains +10 attack.
+“Plunder Away!” |AUTO| At the end of this unit’s attack, reveal the topmost card of your and your opponent's Deck. You may send any of the revealed cards to the Retreat Area.
+---------------
+AM01-05
+false
+King’s War Cry |CONT| During your turn, all |Fang| allies gain +10 attack.
+Royal Command |ACT| |OPT| [|flip1|] Choose 1 |Fang| card with a Deployment Cost of 4 or lower from your hand and deploy them.
+Hawk King’s Pride |SPEC| This card in your hand cannot be stacked on top of a "Tibarn" to Level Up him as the result of a skill's effect.
+---------------
+AM01-06
+false
+Impeccable Eyesight |AUTO| |OPT| When an ally attacks, reveal the top card of your opponent’s Deck. You may send the revealed card to the Retreat Area.
+Hawk King’s Retainer |CONT| If you have another |Fang| ally with a Deployment Cost of 4 or higher, this unit can attack enemies regardless of range.
+---------------
+AM01-07
+false
+Unmatched Hearing |AUTO| |OPT| When an enemy attacks, reveal the top card of your opponent’s Deck. You may send the revealed card to the Retreat Area.
+Hawk King’s Retainer |CONT| If you have another |Fang| ally with a Deployment Cost of 4 or higher, this unit can attack enemies regardless of range.
+---------------
+AM01-08
+false
+Galdr of Rebirth |ACT| [|tap|] Send all cards in your Boundless Area to the Retreat Area. If 5 or more cards were sent to your Retreat Area this way, choose 1 |Green| card from your Retreat Area and add it to your hand.
+Heron Song |ACT| [|tap|] Choose 1 other |Green| ally. Until the end of the turn, the chosen ally gains +20 attack.
+---------------
+AM01-09
+true
+Galdr of Sorrow |ACT| |OPT| Until the end of your opponent’s next turn, the Support skills of cards supporting enemies with a Deployment Cost of 2 or higher are unable to come into effect.
+Heron Song |ACT| [|tap|] Choose 1 other |Green| ally. Until the end of the turn, the chosen ally gains +20 attack.
+---------------
+AM01-10
+true
+Laguz Camaraderie |CONT| During your turn, if the card supporting an ally is |Fang|, that ally gains +10 attack.
+The Interesting Maneuver |ACT| |OPT| [Tap 1 other |Flier| ally] Until the end of the turn, |Fang| allies in the Front Line can attack enemies regardless of range.
+---------------
+AM01-11
+false
+Heir’s Fang |AUTO| When this unit's attack destroys an enemy, choose up to 1 ally. Choose 1 card from your Retreat Area with the same Unit Name as that ally, and stack it underneath that ally to Growth them.
+General’s Roar |ACT| |OPT| [|flip2|] Reveal the top 4 cards of your deck. Choose up to 2 |Fang| cards from among the revealed cards and add them to your hand and send the rest to the Retreat Area.
+Youthful Arrogance |SPEC| This card cannot be stacked on top of a "Skrimir" from your hand to Level Up him as the result of a skill's effect.
+---------------
+AM01-12
+false
+Piercing Glare |AUTO| When an enemy is destroyed by a |Fang| ally’s attack, until the end of your opponent’s next turn, your opponent can’t deploy cards with the same Unit Name as the destroyed enemy.
+Savage Fang |ACT| |OPT| [|flip1|] Until the end of the turn, this unit can attack enemies regardless of range and non-Main Character enemies cannot evade this unit’s attack.
+Dearest Heron |SPEC| While you have an allied “Rafiel”, this card's Deployment Cost becomes 2 while it is in your Hand, Retreat Area, or on the Field.
+---------------
+AM01-13
+false
+Retainer to Dragons |AUTO| [|flip1|] When this unit is deployed, you may pay the cost and if you do: Choose 1 ally. Choose up to 1 card with the same Unit Name as that ally from your Retreat Area, then stack it under that ally to Growth them.
+Red Dragon's Transformation |CONT| If you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
+---------------
+AM01-14
+false
+Searing White Breath |AUTO| When this unit attacks, until the end of combat, the defending enemy loses any attack gained by the effects of skills. If any attack was lost this way, this unit gains +20 attack until the end of combat.
+Traveler's Elixir |ACT| |OPT| [Send 1 Bond card to the Retreat Area] Draw 1 card.
+---------------
+AM01-15
+false
+Traveler’s Experience |AUTO| [Send 1 card from your hand to the Retreat Area] When this unit is deployed, you may pay the cost and if you do: Reveal the top 2 cards from your Deck. Choose 1 card from among them and add it to your hand. Send the rest of the revealed cards to the Retreat Area.
+White Dragon's Transformation |CONT| If you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
+---------------
+AM01-16
+true
+Nullifying Presence |CONT| While there is an enemy with 80 or higher attack, |Green| allies can’t be destroyed by the cost or effect of skills.
+Transcendent Sword Art: Eclipse |AUTO| |OPT| [|flip1|] At the end of this unit’s attack, if this unit’s attack was evaded, you may pay the cost and if you do: Choose up to 2 non-Main Character enemies and destroy them.
+Dauntless Guardian |AUTO| When this unit’s attack destroys an enemy, choose up to 1 other ally. Until the end of your opponent’s next turn, the chosen ally gains +30 attack.
+---------------
+AM01-17
+false
+Matchless Bladework |ACT| |OPT| [|flip1|] Choose 1 enemy in the Back Line and move them. Until the end of the turn, this unit gains +10 attack.
+“You are only wasting my time.” |CONT| If this unit in the Front Line is in combat with a non-Main Character enemy with a Deployment Cost of 3 or lower, until the end of combat, that enemy loses any attack gained by the effects of skills.
+---------------
+AM01-18
+false
+Devoid of All Hope |ACT| |OPT| Send up to 4 cards stacked under an ally or enemy to the Retreat Area. Until the end of the turn, this unit gains +10 attack for each card sent to the Retreat Area by this skill.
+Heart Yearning for Light |ACT| |OPT| Choose 1 |Green| card from your Retreat Area, and place it on either the top or bottom of your Deck.
+Mantle |CONT| This unit cannot be destroyed by attacks from enemies with a Deployment Cost of 2 or lower.
+---------------
+AM01-19
+false
+Self-Sacrificing Sage |ACT| |OPT| Your opponent chooses 5 cards from their hand, and sends the remainder to the Retreat Area. Destroy this unit.
+Maiden’s Mercy |ACT| |OPT| [Send 3 cards stacked underneath your Main Character to the Retreat Area] Until the end of your opponent’s next turn, this unit gains +20 attack and cannot be destroyed by the cost or effects of skills.
+---------------
+AM01-20
+false
+Growth |ACT| |OPT| [|flip1|] Choose up to 1 "Micaiah" from your Retreat Area and stack it under this unit to Growth her.
+GS*Radiance |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] Draw 1 card. Choose 1 card from your hand and send it to the Retreat Area.
+GS*Promise |ACT| [Send 1 card stacked under this unit to the Retreat Area] Until the end of the turn, all allies gain +10 attack.
+GS*Bonds |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] Choose up to 1 other ally. Choose 1 card with the same Unit Name as that ally from your Retreat Area, then stack it under that ally to Growth them.
+---------------
+AM01-21
+true
+Divine Golden Blade |ACT| |OPT| [Stack 1 "Ike" from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit acquires range 1-2 and gains +10 attack.
+Stalwarts Unite |AUTO| When an ally uses a |GS|, until the end of the turn, all allies gain +10 attack.
+Eternal Bond |CONT| This unit acquires all |GS| possessed by other allies. However, if there are multiple skills with the same skill name, he may only have 1 of those.
+---------------
+AM01-22
+true
+Guiding Winds |ACT| |OPT| [|flip1|, Stack 1 "Soren" from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit gains +20 attack. If you have 4 or fewer cards in your hand, draw 1 card.
+The Devoted |CONT| If your Main Character is “Ike”, this unit loses the |OPT| restriction on “Guiding Winds”.
+GS*Roaring Rexcalibur |ACT| |OPT| [Send 2 cards stacked under this unit to the Retreat Area] Choose 1 non-Main Character enemy. Your opponent places that card at the bottom of their deck. (If there are multiple cards in the enemy’s stack, your opponent places them in any order.)
+---------------
+AM01-23
+true
+Legendary Staff Matrona |ACT| |OPT| [|tap|] Choose 1 other |Green| ally. Until the end of your opponent’s next turn, this unit and that ally cannot be destroyed by a skill's cost or effect.
+Heartwarming Radiance |ACT| |OPT| [Tap 1 other |Green| ally] If you have 3 or more other allies, untap this unit. Until the end of the turn, this unit acquires 1-2 range. This skill can only be used if you have used this unit’s “Legendary Staff Matrona” this turn.
+GS*Cheerful Smile |ACT| [Send 2 cards under this unit to the Retreat Area] Choose 1 |Green| ally with a Deployment Cost of 2 or lower from your Retreat Area and deploy them.
+---------------
+AM01-24
+false
+His Fathers’ Son |CONT| During your turn, this unit and allied “Ike” gain +10 attack.
+Mercenary Legend’s Guidance |AUTO| At the end of this unit’s attack, choose 1 card with the same Unit Name as your Main Character and stack it under your Main Character to Growth them.
+GS*Bequeathed Aether |AUTO| [|flip1|, Send 2 cards stacked under this unit to the Retreat Area] When this unit attacks your opponent’s Main Character, you may pay the cost and if you do: Choose up to 2 non-Main Character enemies and destroy them. Until the end of your opponent’s next turn, this unit gains +20 attack.
+---------------
+AM01-25
+false
+Genius Behind the Jester |ACT| |OPT| [Send 2 cards from your hand to the Retreat Area] Draw 2 cards. Until the end of your opponent’s next turn, your opponent's skills are unable to send cards from your hand to the Retreat Area.
+GS*Adept Negotiator |ACT| |OPT| [Send 2 cards stacked underneath this unit to the Retreat Area] Until the end of your next Deployment Phase, |Green| cards in your hand have their Deployment Costs reduced by 1. However, Deployment Costs cannot be reduced to below 1.
+---------------
+AM01-26
+true
+Progenitor of Dawn |SPEC| While an ally’s stack has 7 or more cards, the Deployment Cost of this card in your hand becomes 1.
+Holy Empress |AUTO| [|flip2|] When this unit is deployed during your Second Deployment Phase, you may pay the cost and if you do: Destroy all non-Main Character enemies.
+Blazing Twin Blades |CONT| While this unit is in the Front Line, this unit gains +10 attack and acquires 1-2 range.
