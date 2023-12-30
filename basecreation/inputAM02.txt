@@ -12,7 +12,7 @@ Sacred Storm, Excalibur |ACT| |OPT| [Flip 1 |purple| Bond face-down] Until the e
 Divine Dragon’s Guardian |AUTO| |OPT| When a |Dragonstone| card is placed in the Support Area while you have no allies with a Deployment Cost of 5 or higher, if you have 3 or fewer cards in your hand, draw 1 card.
 ---------------
 AM02-04
-false
+true
 Alluring Performance |ACT| [|tap|, |flip1|] Choose 1 ally in the Front Line with a Deployment Cost of 4 or lower, and untap them.
 Mercenary Dancer |CONT| If you have 2 or more other |Sword| allies in the Front Line, this unit can’t be attacked by enemies.
 ---------------
@@ -24,7 +24,7 @@ Obsidian’s Teachings |AUTO| |OPT| When this unit’s attack destroys an enemy,
 AM02-06
 false
 Righteous Light, Ivaldi |CONT| This unit gains +10 attack for each other tapped |purple| ally with a Deployment Cost of 4 or lower.
-Latona, Staff of Glorious Light |ACT| |OPT| [|flip2|] Choose up to 2 |purple| cards with different Unit Names and Deployment Cost of 4 or lower from your Retreat Area and add them to your hand. Choose 1 card from your hand and place it on top of your Deck. This skill may only be used if you have no allies with a Deployment Cost of 5 or greater. 
+Latona, Staff of Glorious Light |ACT| |OPT| [|flip2|] Choose up to 2 non-“L'Arachel” |purple| cards with different Unit Names and Deployment Cost of 4 or lower from your Retreat Area and add them to your hand. Choose 1 card from your hand and place it on top of your Deck. This skill may only be used if you have no allies with a Deployment Cost of 5 or greater. 
 ---------------
 AM02-07
 true
@@ -43,19 +43,19 @@ Charge of the Ilian Knights |CONT| |Beast| cards in your Support Area with 10 Su
 AM02-10
 false
 Maltet, the Legendary Weapon |ACT| [|flip1|] Until the end of your opponent's next turn, this unit gains +10 attack.
-LIS*Barigan’s Command |ACT| |Once Per Turn| Reveal the top card of your Deck. If the revealed card is |Purple| and |Beast| and has a Deployment Cost of 4 or lower, you may deploy it. This skill may only be used if this unit has used “Legendary Weapon: Maltet” 2 or more times in this turn.
-Path of the Frigid Wasteland |CONT| If this unit is in the Front Line, this unit can attack enemies in the Back Line with lower attack than this unit regardless of range.
+LIS*Barigan’s Command |ACT| |OPT| Reveal the top card of your Deck. If the revealed card is |Purple| and |Beast| and has a Deployment Cost of 4 or lower, you may deploy it. This skill may only be used if this unit has used “Legendary Weapon: Maltet” 2 or more times in this turn.
+Path of the Frigid Wasteland |CONT| If this unit is in the Front Line, this unit can attack enemies with lower attack than this unit regardless of range.
 ---------------
 AM02-11
 false
 Mulagir, the Legendary Weapon |ACT| [|flip1|] Until the end of the turn, all allies who are in the same area as this unit gain +10 attack.
-LIS*Hanon’s Howling Gale |ACT| |Once Per Turn| Until the end of the turn, all non-Main Character enemies are unable to evade. This skill may only be used if this unit has used “Mulagir, the Legendary Weapon” 2 or more times in this turn.
+LIS*Hanon’s Howling Gale |ACT| |OPT| Until the end of the turn, all non-Main Character enemies are unable to evade. This skill may only be used if this unit has used “Mulagir, the Legendary Weapon” 2 or more times in this turn.
 Path of the Stormy Plains |CONT| During your turn, this unit acquires |Bow|, range 2, and “Anti-Fliers”. (“Anti-Fliers” |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.)
 ---------------
 AM02-12
 true
 Sword God’s Lineage |ACT| |OPT| Choose 1 |Sword| card with a Deployment Cost of 4 or lower from your Retreat Area and place it in your Bond Area. If you do, send 1 Face-Up Bond card to the Retreat Area.
-Swordmaster’s Teaching |AUTO| When a |Sword| card is placed in your Bond Area by the cost or effect of a skill, until the end of the turn, all |Yellow| allies gain +10 attack.
+Swordmaster’s Teachings |AUTO| When a |Sword| card is placed in your Bond Area by the cost or effect of a skill, until the end of the turn, all |Yellow| allies gain +10 attack.
 Balmung’s Divine Astra |ACT| |OPT| [Flip 1 “Shannan”, “Larcei”, or “Scáthach” Bond face-down] Untap this unit. This skill is only usable if you have 5 or more Bond cards.
 ---------------
 AM02-13
@@ -64,13 +64,13 @@ BS*Swordmaster Siblings |BOND| |ACT| [Flip this card Face-Down] If you have a �
 ---------------
 AM02-14
 false
-Commoner's Prayer |ACT| |OPT| [|flip1|] Choose 1 of your Bond cards and send it to the Retreat Area. Choose 1 card in your Retreat Area that shares a Unit Name with another |Yellow| ally and place it in your Bond Area.
+Commoner's Prayer |ACT| |OPT| [|flip1|] Choose 1 of your Bond cards and send it to the Retreat Area. Choose 1 card in your Retreat Area that shares a Unit Name with an ally and place it in your Bond Area.
 The Spirit to Repel Darkness |SPEC| When this card in your hand is sent to the Retreat Area as a result of an enemy's skill or Support Skill, choose 1 of your face-down Bond cards and flip it face-up.
 ---------------
 AM02-15
 false
-Heir of Silesse |CONT| When a |Flier| ally is supported by a |Tome|, that ally gains +10 attack.
-Empyrean Wind, Forseti |ACT| |OPT| [Flip 1 “Ced”, “Fee”, or “Lewyn” Bond Face-Down] Choose 1 non-"Ced" |Yellow| |Flier| card from your Retreat Area, and add it to your hand. Until the end of your opponent’s next turn, all allies acquire |Flier|.
+Heir to the Silessean Throne |CONT| When a |Flier| ally is supported by a |Tome|, that ally gains +10 attack.
+Empyrean Wind, Forseti |ACT| |OPT| [Flip 1 “Ced” or “Lewyn” Bond Face-Down] Choose 1 non-"Ced" |Yellow| |Flier| card from your Retreat Area, and add it to your hand. Until the end of your opponent’s next turn, all allies acquire |Flier|.
 ---------------
 AM02-16
 false
@@ -89,7 +89,7 @@ Lightning Illuminating the Darkness |AUTO| At the end of your turn, if 1 or more
 AM02-19
 true
 Future Lionheart |AUTO| At the end of your turn, if you have 6 or more Bond cards, you may choose 1 of your Bond cards and add it to your hand.
-Mystletainn of Successors |ACT| |OPT| [Flip 1 “Ares”, “Nanna”, or “Diarmuid” Bond face-down] Choose 1 “Eldigan” or “Lachesis” card in your Retreat Area and place it in your Bond Area. Until the end of the turn, all allies gain +10 attack.
+Mystletainn of Remembrance |ACT| |OPT| [Flip 1 “Ares” or “Eldigan” Bond face-down] Choose 1 “Eldigan” or “Lachesis” card in your Retreat Area and place it in your Bond Area. Until the end of the turn, all allies gain +10 attack.
 ---------------
 AM02-20
 true
@@ -101,19 +101,19 @@ false
 Scions of Hezul |CONT| While you have an allied “Ares”, during your turn, this card gains +20 attack.
 ---------------
 AM02-22
-false
-Helswath, Divine Axe of Nál |ACT| |OPT| [Flip 1 “Johan”, “Johalvier”, or “Brian” Bond Face-Down] Until the end of your opponent’s next turn, this unit gains +30 attack and acquires range 1-2.
-Leader of the Dozel Forces |CONT| During your turn, while you have 8 or more Bond cards, all allies gain +10 attack.
+true
+Helswath, Divine Axe of Nál |ACT| |OPT| [Flip 1 “Brian”, “Dannan”, or “Lombard” Bond face-down] Until the end of your opponent’s next turn, this unit gains +30 attack and acquires range 1-2.
+Dozel's Command |CONT| During your turn, while you have 8 or more Bond cards, all allies gain +10 attack.
 ---------------
 AM02-23
 true
 Bonds of Heaven and Earth |AUTO| |OPT| Whenever a “Leif” or “Arion” card is placed in your Bond Area, choose 1 enemy and move them.
-Valiant Gáe Bolg |ACT| |OPT| [Flip 1 “Altena”, “Leif”, or “Quan” Bond card face-down, Send 1 Bond card to the Retreat Area] Choose 1 non-“Altena” |Lance| card in your Retreat Area and place it in your Bond Area. Until the end of your opponent’s next turn, this unit gains +20 attack.
+Valiant Gáe Bolg |ACT| |OPT| [Flip 1 “Altena” or “Quan” Bond card face-down, Send 1 Bond card to the Retreat Area] Choose 1 |Lance| card in your Retreat Area and place it in your Bond Area. Until the end of your opponent’s next turn, this unit gains +20 attack.
 ---------------
 AM02-24
 true
-Commander of the Dracoknights |ACT| |OPT| Choose 1 face-down Bond card and flip it face-up. This skill may only be used if you have 2 or more other |Dragon| |Flier| allies.
-Inherited Bloody Gungnir |ACT| |OPT| [Flip 1, Send 1 “Arion” or “Travant” Bond card to the Retreat Area] For every 3 Bonds you have, choose 1 non-Main Character enemy and destroy them.
+Lord of Dracoknights |ACT| |OPT| Choose 1 face-down Bond card and flip it face-up. This skill may only be used if you have 2 or more other |Dragon| |Flier| allies.
+Inherited Bloody Gungnir |ACT| |OPT| [Flip 1 “Arion” or “Travant” Bond card face-down, Send 1 |Yellow| Bond card to the Retreat Area] For every 3 Bonds you have, choose 1 non-Main Character enemy and destroy them.
 ---------------
 AM02-25
 true
@@ -124,21 +124,21 @@ Relic Art: Beast Fang |AUTO| [|flip1|] When this unit’s attack destroys an ene
 AM02-26
 false
 Big Game Hunter |CONT| When this unit attacks an enemy with 80 or higher attack, this unit gains +100 attack until the end of combat.
-Picking up the Slack |AUTO| |OPT| When an allied “Hilda” is tapped by the cost or effect of a skill, untap this unit.
+Picking Up The Slack |AUTO| |OPT| When an allied “Hilda” is tapped by the cost or effect of a skill, untap this unit.
 ---------------
 AM02-27
 false
 Inspirational Charm |ACT| |OPT| [|flip1|] Choose 1 ally with a Deployment Cost of 5 or higher that has not attacked this turn, and untap them.
-Lady Daphnel’s Authority |ACT| [Once Per Turn] Choose 1 non-Main Character enemy in the Back Line with a Deployment Cost of 4 or lower and move them.
---------------
+Lady Daphnel’s Authority |ACT| |OPT| Choose 1 non-Main Character enemy in the Back Line with a Deployment Cost of 4 or lower and move them.
+---------------
 AM02-28
 false
-Commander of the Horde |ACT| |OPT| [|flip2|] Reveal the top 5 cards of your deck. Choose up to 2 |Brown| among the revealed cards that are |Flier| or |Beast| and add them to your hand. Send the remaining cards to the Retreat Area.
+Grand Commander |ACT| |OPT| [|flip2|] Reveal the top 5 cards of your deck. Choose up to 2 |Brown| among the revealed cards that are |Flier| or |Beast| and add them to your hand. Send the remaining cards to the Retreat Area.
 Great Almyran General |CONT| During your turn, if you have 2 or more other allies in the Front Line, this unit gains +30 attack.
 ---------------
 AM02-29
 false
-Amass the Army |ACT| |OPT| Until the end of your opponent’s turn, this unit gains +20 attack. This skill may only be used if there are more allies than enemies. 
+Amass the Army |ACT| |OPT| Until the end of your opponent’s turn, this unit gains +30 attack. This skill may only be used if there are more allies than enemies.
 Ambition’s Folly |AUTO| At the end of your turn, if you have more allies than enemies, choose 1 card from your hand and send it to the Retreat Area.
 ---------------
 AM02-30

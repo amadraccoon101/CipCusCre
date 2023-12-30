@@ -1,6 +1,6 @@
 AM01-01
 true
-Yune’s Chosen |ACT| |OPT| [|flip2|] Choose 1 |Green| card with the same Unit Name as your Main Character from your hand, and place it on top of your Main Character to Level Up them.
+Yune’s Chosen |ACT| |OPT| [|flip2|] Choose 1 |Green| card with the same Unit Name as your Main Character from your hand, and place it on top of your Main Character to Level Up them. Send this unit to the Boundless Area.
 Chaos Blessing |CONT| All |Green| allies may also be Supported by Support Cards with the same Unit Name as themselves.
 To Dwell Within Hearts |SPEC| When this card is sent to the Boundless Area by “Yune’s Chosen”, if your Main Character does not possess “Chaos Blessing”, then until the end of the game, that Main Character acquires “Chaos Blessing”.
 ---------------
@@ -81,7 +81,7 @@ White Dragon's Transformation |CONT| If you have an ally with a Deployment Cost 
 AM01-16
 true
 Nullifying Presence |CONT| While there is an enemy with 80 or higher attack, |Green| allies can’t be destroyed by the cost or effect of skills.
-Transcendent Sword Art: Eclipse |AUTO| |OPT| [|flip1|] At the end of this unit’s attack, if this unit’s attack was evaded, you may pay the cost and if you do: Choose up to 2 non-Main Character enemies and destroy them.
+Transcendent Sword Art: Eclipse |AUTO| [|flip1|] When this unit’s attack fails to destroy an enemy, you may pay the cost and if you do: Choose up to 1 non-Main Character enemy and destroy them.
 Dauntless Guardian |AUTO| When this unit’s attack destroys an enemy, choose up to 1 other ally. Until the end of your opponent’s next turn, the chosen ally gains +30 attack.
 ---------------
 AM01-17
