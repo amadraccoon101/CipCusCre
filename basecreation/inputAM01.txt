@@ -1,6 +1,6 @@
 AM01-01
 true
-Yune’s Chosen |ACT| |OPT| [|flip3|] Choose 1 |Green| card with the same Unit Name as your Main Character from your hand, and place it on top of your Main Character to Level Up them. Send this card to the Boundless Area.
+Yune’s Chosen |ACT| |OPT| [|flip3|] Choose 1 |Green| card with the same Unit Name as your Main Character from your Retreat Area, and place it on top of your Main Character to Level Up them. Send this card to the Boundless Area.
 Chaos Blessing |CONT| All |Green| allies may also be Supported by Support Cards with the same Unit Name as themselves.
 To Dwell Within Hearts |SPEC| When this card is sent to the Boundless Area by “Yune’s Chosen”, if your Main Character does not possess “Chaos Blessing”, then until the end of the game, that Main Character acquires “Chaos Blessing”.
 ---------------
@@ -39,12 +39,12 @@ Hawk King’s Retainer |CONT| If you have another |Fang| ally with a Deployment 
 AM01-08
 false
 Galdr of Rebirth |ACT| [|tap|] Send all cards in your Boundless Area to the Retreat Area. If 5 or more cards were sent to your Retreat Area this way, choose 1 |Green| card from your Retreat Area and add it to your hand.
-Heron Song |ACT| [|tap|] Choose 1 other |Green| ally. Until the end of the turn, the chosen ally gains +20 attack.
+Song of Valor |ACT| [|tap|] Choose 1 other |Green| ally. Until the end of the turn, the chosen ally gains +20 attack.
 ---------------
 AM01-09
 true
 Galdr of Sorrow |ACT| |OPT| Until the end of your opponent’s next turn, the Support skills of cards supporting enemies with a Deployment Cost of 2 or higher are unable to come into effect.
-Heron Song |ACT| [|tap|] Choose 1 other |Green| ally. Until the end of the turn, the chosen ally gains +20 attack.
+Song of Bliss |ACT| [|tap|] Choose 1 other ally with 70 or lower attack. Until the end of the turn, the chosen ally gains +20 attack.
 ---------------
 AM01-10
 true
@@ -84,7 +84,7 @@ Dauntless Guardian |AUTO| [|flip1|] When this unit’s attack destroys an enemy,
 AM01-17
 false
 Matchless Bladework |ACT| |OPT| [|flip1|] Choose 1 enemy in the Back Line and move them. Until the end of the turn, this unit gains +10 attack.
-“You are only wasting my time.” |CONT| If this unit in the Front Line is in combat with a non-Main Character enemy with a Deployment Cost of 3 or lower, until the end of combat, that enemy loses any attack gained by the effects of skills.
+“You are only wasting my time.” |AUTO| If this unit in the Front Line is in combat with a non-Main Character enemy with a Deployment Cost of 3 or lower, until the end of combat, that enemy loses any attack gained by the effects of skills.
 ---------------
 AM01-18
 false
@@ -107,7 +107,7 @@ GS*Bonds |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] C
 AM01-21
 true
 Divine Golden Blade |ACT| |OPT| [Stack 1 “Ike” from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit gains +10 attack and acquires range 1-2.
-Stalwarts Unite |AUTO| When an ally uses a |GS|, choose 1 other ally. Until the end of the turn, the chosen ally gains +20 attack.
+Stalwarts Unite |AUTO| |OPT| When an ally uses a |GS|, choose 1 other ally. Until the end of the turn, the chosen ally gains +20 attack.
 Eternal Bond |CONT| This unit acquires all |GS| possessed by other allies. However, if there are multiple skills with the same skill name, he may only have 1 of those.
 ---------------
 AM01-22
@@ -134,6 +134,6 @@ GS*Adept Negotiator |ACT| |OPT| [Send 2 cards stacked underneath this unit to th
 ---------------
 AM01-26
 true
-Progenitor of Dawn |SPEC| If there is a total of 7 or more cards in an ally's stack, the Deployment Cost of this card in your hand becomes 1.
+Progenitor of Dawn |SPEC| While an ally's stack has 7 or more cards, the Deployment Cost of this card in your hand becomes 1.
 Holy Empress |AUTO| [|flip2|] At the start of your turn, you may pay the cost and if you do: Destroy all non-Main Character enemies.
 Blazing Twin Blades |CONT| While this unit is in the Front Line, this unit gains +10 attack and acquires 1-2 range.

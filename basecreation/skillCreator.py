@@ -66,7 +66,7 @@ def createSkills(skills, cardName, border):
     print(rows)
 
     # set up space on the card for effects
-    boty = 100
+    boty = 200
     bgcx, bgcy = output.size
     skillx = 18
     skilly = bgcy - boty - (rows * rowheight) - (len(skills) * rowextra)
