@@ -56,7 +56,7 @@ AM02-12
 true
 Sword God’s Lineage |ACT| |OPT| Choose 1 |Sword| card with a Deployment Cost of 4 or lower from your Retreat Area and place it in your Bond Area. If you do, send 1 Face-Up Bond card to the Retreat Area.
 Swordmaster’s Teachings |AUTO| When a |Sword| card is placed in your Bond Area by the cost or effect of a skill, until the end of the turn, all |Yellow| allies gain +10 attack.
-Balmung’s Divine Astra |ACT| |OPT| [Flip 1 “Shannan”, “Larcei”, or “Scáthach” Bond face-down] Untap this unit. This skill is only usable if you have 5 or more Bond cards.
+Balmung’s Divine Astra |ACT| |OPT| [Flip 1 “Shannan” or “Marricle” Bond face-down] Untap this unit. This skill is only usable if you have 5 or more Bond cards.
 ---------------
 AM02-13
 false
