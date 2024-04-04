@@ -1,4 +1,5 @@
 from skillCreator import createSkills
+import sys, threading
 
 f = open("inputAM02.txt", "r", encoding="utf-8")
 
@@ -21,3 +22,8 @@ while nextline:
     print(skills)
     createSkills(skills, cardName, border)
     nextline = f.readline()
+
+limit = sys.getrecursionlimit()
+print(limit)
+size = threading.stack_size()
+print(size)
