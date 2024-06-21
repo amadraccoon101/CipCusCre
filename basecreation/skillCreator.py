@@ -23,7 +23,7 @@ def createSkills(skills, cardName, border):
     ###############################################################################################################
     #Constants
     ###############################################################################################################
-    skillatr = ['lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','gs','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
+    skillatr = ['lis','bs','hs','es','cp','db','dv','ts','fs','ccs','cf','gs','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
     skilltypes = ['act','auto','cont','bond','spec','supp','hand']
 
     attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon','dragonstone','knife',

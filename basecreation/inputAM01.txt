@@ -65,7 +65,7 @@ Dearest Heron |SPEC| While you have an allied “Rafiel”, this card's Deployme
 AM01-13
 false
 Retainer to Dragons |AUTO| [|flip1|] When this unit is deployed, you may pay the cost and if you do: Choose up to 1 card with the same Unit Name as your Main Character from your Retreat Area, then stack it under that them to Growth them.
-Red Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, until this unit leaves the Battlefield, this unit gains +20 attack.
+Red Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
 ---------------
 AM01-14
 false
@@ -75,18 +75,18 @@ Traveler's Elixir |ACT| |OPT| [Send 1 Bond card to the Retreat Area] Draw 1 card
 AM01-15
 false
 Traveler’s Experience |AUTO| [Send 1 |Green| card from your hand to the Retreat Area] When this unit is deployed, you may pay the cost and if you do: Reveal the top 3 cards from your Deck. Choose 1 |Green| card from among them and add it to your hand. Send the rest to the Retreat Area.
-White Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, until this unit leaves the Battlefield, this unit gains +20 attack.
+White Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
 ---------------
 AM01-16
 true
 Grand Marshal of Begnion |SPEC| Treat this card as if its Unit Name is also “Zelgius”.
-Transcendent Sword Art: Eclipse |AUTO| [|flip1|] If this unit’s attack was evaded, you may pay the cost and if you do: Choose 1 of your opponent's Orbs and send it to the Retreat Area.
-Dauntless Guardian |AUTO| [|flip1|] When this unit’s attack destroys an enemy, you may pay the cost and if you do: Choose up to 1 other ally with attack less than this unit. Until the end of your opponent’s next turn, the chosen ally gains +30 attack and cannot be destroyed by the cost or effects of skills.
+Transcendent Sword Art: Eclipse |AUTO| |OPT| [|flip1|] If this unit’s attack was evaded, you may pay the cost and if you do: Choose 1 of your opponent's Orbs and send it to the Retreat Area.
+Dauntless Guardian |AUTO| |OPT| [|flip1|] When this unit’s attack destroys an enemy, you may pay the cost and if you do: Choose up to 1 other ally with attack less than this unit. Until the end of your opponent’s next turn, the chosen ally gains +30 attack and cannot be destroyed by the cost or effects of skills.
 ---------------
 AM01-17
 false
-Matchless Bladework |ACT| |OPT| [|flip1|] Choose 1 enemy in the Back Line and move them. Until the end of the turn, this unit gains +10 attack.
-“You are only wasting my time.” |AUTO| If this unit in the Front Line is in combat with a non-Main Character enemy with a Deployment Cost of 3 or lower, until the end of combat, that enemy loses any attack gained by the effects of skills.
+General's Challenge |ACT| |OPT| [|flip1|] Choose up to 1 enemy in the Back Line and move them. Until the end of the turn, this unit gains +10 attack.
+“You are only wasting my time.” |CONT| While this unit in the Front Line is in combat with a non-Main Character enemy with a Deployment Cost of 3 or lower, that enemy loses any attack gained by the effects of skills and cannot gain attack by the effect of skills.
 ---------------
 AM01-18
 false
@@ -109,8 +109,8 @@ GS*Bonds |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] C
 AM01-21
 true
 Divine Golden Blade |ACT| |OPT| [Stack 1 “Ike” from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit gains +10 attack and acquires range 1-2.
-Stalwarts Unite |AUTO| |OPT| When an ally uses a |GS|, choose 1 other ally with a Deployment Cost of 4 or higher. Until the end of the turn, the chosen ally gains +20 attack.
-Eternal Bond |CONT| This unit acquires all |GS| possessed by other allies. However, if there are multiple skills with the same skill name, he may only have 1 of those.
+GS*Stalwarts Unite |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] Choose 1 ally with a Deployment Cost of 4 or higher. Until the end of the turn, the chosen ally gains +20 attack.
+Eternal Bond |ACT| |OPT| Choose 1 ally. Until the end of the turn, this unit acquires all |GS| possessed by that ally.
 ---------------
 AM01-22
 true
@@ -132,7 +132,7 @@ GS*Bequeathed Aether |AUTO| [|flip1|, Send 2 cards stacked under this unit to th
 AM01-25
 false
 Genius Behind the Jester |ACT| |OPT| [Send 2 cards from your hand to the Retreat Area] Draw 2 cards. Until the end of your opponent’s next turn, your opponent's skills are unable to send cards from your hand to the Retreat Area.
-GS*Adept Negotiator |ACT| |OPT| [Send 2 cards stacked underneath this unit to the Retreat Area] Until the end of your next Deployment Phase, |Green| cards in your hand have their Deployment Costs reduced by 1. However, Deployment Costs cannot be reduced to below 1.
+GS*Adept Negotiator |ACT| |OPT| [Send 2 cards stacked underneath this unit to the Retreat Area] Until the end of your next Deployment Phase, |Green| cards in your hand have their Deployment Costs reduced by 1. Deployment Costs cannot be reduced below 1.
 ---------------
 AM01-26
 true

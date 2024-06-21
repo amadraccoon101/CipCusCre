@@ -1,7 +1,7 @@
 from skillCreator import createSkills
 import sys, threading
 
-f = open("inputAM02.txt", "r", encoding="utf-8")
+f = open("inputAM03.txt", "r", encoding="utf-8")
 
 nextline = f.readline()
 while nextline:
