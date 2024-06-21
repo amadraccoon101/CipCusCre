@@ -27,7 +27,7 @@ def createSkills(skills, cardName, border):
     skilltypes = ['act','auto','cont','bond','spec','supp','hand']
 
     attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon','dragonstone','knife',
-                'fang','female','flier','green','lance','male','mirage','monster','purple','red',
+                'fang','female','flier','green','lance','male','mirage','monster','purple','red', 'cyan',
                 'staff','sword','tome','white','yellow',
                 'act','auto','cont','bond','spec','supp','hand','opt',
                 #'lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7',
