@@ -64,8 +64,8 @@ Dearest Heron |SPEC| While you have an allied “Rafiel”, this card's Deployme
 ---------------
 AM01-13
 false
-Retainer to Dragons |AUTO| [|flip1|] When this unit is deployed, you may pay the cost and if you do: Choose up to 1 card with the same Unit Name as your Main Character from your Retreat Area, then stack it under that them to Growth them.
-Red Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
+Retainer to Dragons |AUTO| [|flip1|] When this unit is deployed, you may pay the cost and if you do: Choose up to 1 card with the same Unit Name as your Main Character from your Retreat Area, then stack it under them to Growth them.
+Red Dragon's Transformation |CONT| This unit gains +10 per |Green| ally with a Deployment Cost of 5 or higher.
 ---------------
 AM01-14
 false
@@ -75,7 +75,7 @@ Traveler's Elixir |ACT| |OPT| [Send 1 Bond card to the Retreat Area] Draw 1 card
 AM01-15
 false
 Traveler’s Experience |AUTO| [Send 1 |Green| card from your hand to the Retreat Area] When this unit is deployed, you may pay the cost and if you do: Reveal the top 3 cards from your Deck. Choose 1 |Green| card from among them and add it to your hand. Send the rest to the Retreat Area.
-White Dragon's Transformation |AUTO| When this unit is deployed or Leveled Up into from your hand while you have an ally with a Deployment Cost of 5 or higher, this unit gains +20 attack.
+White Dragon's Transformation |CONT| This unit gains +10 per |Green| ally with a Deployment Cost of 5 or higher.
 ---------------
 AM01-16
 true
