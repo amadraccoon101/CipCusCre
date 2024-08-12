@@ -28,7 +28,7 @@ def createSkills(skills, cardName, border, fname):
 
     attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon','dragonstone','knife',
                 'fang','female','flier','green','lance','male','mirage','monster','purple','red', 'cyan',
-                'staff','sword','tome','white','yellow',
+                'staff','sword','tome','white','yellow','emblem',
                 'act','auto','cont','bond','spec','supp','hand','opt',
                 #'lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7',
                 'flip1','flip2','flip3','flip4','flip5','tap']
@@ -55,7 +55,7 @@ def createSkills(skills, cardName, border, fname):
     ### adding the skills
     # line character limit 60, pixel length is 1090
     # get rows
-    fontsize = 8
+    fontsize = 9
     font = ImageFont.truetype('georgiab.ttf', fontsize)
     charwid = 3
     rowheight = 12

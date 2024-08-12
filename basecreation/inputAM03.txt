@@ -36,8 +36,8 @@ Knightly Escort |AUTO| At the start of your opponent's turn, if this non-Main Ch
 ---------------
 AM03-08
 true
-Steward of the Crown Princess |CONT| If this unit Critical Hits, you may send a "Timerra" or "Merrin" from your hand to the Retreat Area instead of a card with the same Unit Name as this unit.
-Raging Blood |AUTO| |OPT| [|flip1|] When this unit Critical Hits, if you have fewer Orbs than your opponent, you may pay the cost and if you do: Untap this unit.
+Steward of the Crown Princess |CONT| If this unit Critical Hits, you may send a "Timerra" or "Merrin" card from your hand to the Retreat Area instead of a card with the same Unit Name as this unit.
+Balancing Rage and Elegance |AUTO| |Once Per Turn| [Flip 1 Bond face-down] When this unit Critical Hits, you may pay the cost and if you do: Draw 2 cards, then choose 1 card from your hand and send it to the Retreat Area.
 Whirlwind Swing |AUTO| When this unit Critical Hits, choose 1 enemy and move them.
 ---------------
 AM03-09
@@ -67,8 +67,8 @@ Engaging Dance |ACT| [|flip2|, |tap|] Choose 1 other ally and untap them. If the
 AM03-14
 true
 “Emblem, Engage!” |AUTO| When this unit is deployed, choose 1 other |Cyan| ally. Send all |Emblem| cards in that ally's stack to the Retreat Area, then stack this card under that ally to Engage them.
-ES*Impenetrable Stance |ACT| [|flip1|, Send all |Emblem| cards in this unit's stack to the Retreat Area] Until the end of your opponent's next turn, this unit gains +30 attack. Tap this unit.
-Great Aether |SPEC| When this card is sent from a |Cyan| ally's stack to the Retreat Area by a skill's cost or effect, choose up to 2 non-Main Character enemies, and destroy them.
+ES*Immovable Stance |ACT| [|flip1|, Send all |Emblem| cards in this unit's stack to the Retreat Area] Until the end of your opponent's next turn, this unit gains +30 attack. Tap this unit.
+Great Aether |SPEC| When this card is sent from a |Cyan| ally's stack to the Retreat Area due to the effect of "Immovable Stance", choose up to 2 non-Main Character enemies, and destroy them.
 ---------------
 AM03-15
 false
@@ -79,13 +79,13 @@ ES*Torrential Roar |ACT| |OPT| [|flip1|, Send all |Emblem| cards in this unit's 
 AM03-16
 true
 “Emblem, Engage!” |AUTO| When this unit is deployed, choose 1 other |Cyan| ally. Send all |Emblem| cards in that ally's stack to the Retreat Area, then stack this card under that ally to Engage them.
-ES*Lunar Brace |AUTO| |OPT| When this unit attacks, until the end of combat, this unit gains +10 attack and the defending enemy loses any attack gained by the effects of skills.
+ES*Lunar Brace |AUTO| |OPT| When this unit attacks, until the end of combat, this unit gains +10 attack and the defending enemy loses any attack gained by a skill's effect.
 ES*Twin Spirits |AUTO| At the end of your turn, send all |Emblem| cards in this unit's stack to the Retreat Area. Choose up to 1 "Emblem Ephraim" card in your Retreat Area and stack that card under this unit to Engage them. Until the end of the turn, "Twin Spirits" cannot trigger.
 ---------------
 AM03-17
 true
 “Emblem, Engage!” |AUTO| When this unit is deployed, choose 1 other |Cyan| ally. Send all |Emblem| cards in that ally's stack to the Retreat Area, then stack this card under that ally to Engage them.
-ES*Solar Brace |AUTO| |OPT| When this unit is attacked, until the end of combat, this unit gains +10 attack and the attacking enemy loses any attack gained by the effects of skills.
+ES*Solar Brace |AUTO| |OPT| When this unit is attacked, until the end of combat, this unit gains +10 attack and the attacking enemy loses any attack gained by a skill's effect.
 ES*Twin Spirits |AUTO| At the end of your turn, send all |Emblem| cards in this unit's stack to the Retreat Area. Choose up to 1 "Emblem Eirika" card in your Retreat Area and stack that card under this unit to Engage them. Until the end of the turn, "Twin Spirits" cannot trigger.
 ---------------
 AM03-18
@@ -106,4 +106,103 @@ false
 “Emblem, Engage!” |AUTO| When this unit is deployed, choose 1 other |Cyan| ally. Send all |Emblem| cards in that ally's stack to the Retreat Area, then stack this card under that ally to Engage them.
 ES*Draconic Grace |CONT| If your Main Character has a Deployment Cost of 2 or lower, this unit gains +20 attack.
 ES*With Everyone! |ACT| [Send all |Emblem| cards in this unit's stack to the Retreat Area] Choose 1 of your Bond cards, and add it to your hand. Reveal the top card of you Deck, and place it face-down in your Bond Area.
+---------------
+AM03-21
+true
+Liberator's Might |ACT| |OPT| [|flip1|] Choose 1 non-Main Character enemy and move them. If this unit is Engaged, until the end of the turn, this unit gains +20 attack.
+Authority of the Connector |AUTO| |OPT| At the end of your turn, if an ally was Engaged this turn, reveal the top card of your Deck. If the revealed card is |Cyan|, place it in your Bonds.
+---------------
+AM03-22
+false
+Restoring the Ring's Power |AUTO| |OPT| [|flip1|] When an |Emblem| card is sent from this units stack to the Retreat Area you may pay the cost. If you do: Add the card to your hand instead of sending it to your Retreat Area.
+---------------
+AM03-23
+false
+Swordplay of the Connector |CONT| If this unit is attacked while he is Engaged, this unit gains +20 attack.
+---------------
+AM03-24
+false
+Arrival of Emancipation Army |AUTO| When you Class Change into this unit, choose 1 |Fang| card with a Deployment Cost of 4 or lower and either stack it on top of an ally with the same Unit Name or add it to your hand.
+Raid of the Emancipation Forces |AUTO| When this unit attacks, reveal cards from the top of your opponent's Deck equal to the amount of allies. Choose up to 1 of them and place it on top of your opponent's Deck and send the rest to the Retreat Area.
+Corsair's Rexflame |AUTO| When a card is sent to the Retreat Area from your opponent's Deck, until the end of the turn, for each card sent, this unit gains +10 attack.
+---------------
+AM03-25
+false
+Guardsman of the Liberators |ACT| |OPT| Until the end of your opponent's next turn, this allied "Tormod", "Vika", and this unit gains +10 attack. This skill may only be used if you have an allied "Tormod" or "Vika".
+Plundering Tiger Claw |AUTO| When this unit attacks, reveal the top card of your opponent's Deck. You may send that card to the Retreat Area.
+---------------
+AM03-26
+true
+Master's Bladeswath |AUTO| When this unit's attack ends, choose 1 non-Main Character enemy in the Backline and move them.
+Ironscale Wings |CONT| Enemies attacking |Dragon| allies lose "Anti-Fliers" and are unable to reacquire it.
+GS*Cancelling Black Gale |AUTO| |OPT| [Send 1 card stacked under this unit to the Retreat Area] When an enemy is untapped by a skill's effect or deployed by a skill's effect, you may pay the cost and if you do: Choose 1 enemy and tap them. Until the end of your opponent's turn, that enemy cannot be untapped.
+---------------
+AM03-27
+false
+"Maybe next time." |AUTO| When this unit is deployed in the Front Line, move this unit.
+---------------
+AM03-28
+true
+Murderous Aura |CONT| All other units that have not Leveled Up lose -10 attack.
+Murky Memories of Glory |AUTO| |OPT| [|flip1|] When an ally is Growthed or Leveled Up, you may pay the cost and if you do: Reveal the bottom 4 cards from your Deck. Choose up to 1 of the revealed cards and add it to your hand, then send the rest to the Retreat Area.
+Valiance Swallowed by Madness |SPEC| Treat this card as if its Unit Name is also "Renning".
+---------------
+AM03-29
+false
+Royal Blade of Crimea |AUTO| At the start of your turn, if there are no non-Main Character enemies, until the end of the turn, this unit gains +20 attack.
+Grim Fate |SPEC| Treat this card as if its Unit Name is also "Bertram".
+---------------
+AM03-30
+true
+Amiti's Gleam |ACT| |OPT| [|flip2|] Untap this unit.
+GS*Crimea's Heart |ACT| |OPT| [Send 2 cards stacked under this unit to the Retreat Area] Reveal the top 5 card of your Deck. Choose up to 1 |Green| card from among them and add it to your hand. Send the rest of the cards to the Retreat Area.
+---------------
+AM03-31
+true
+Verdanite Forestwalker |CONT| While this unit is in the Front Line, this unit can attack enemies regardless of range.
+Bow of Life, Yewfelle |ACT| |OPT| [Flip 1 “Brigid” or “Febail” Bond face-down] Until the end of your opponent's next turn, this unit gains +20 attack. If you have as many as or fewer Bond cards than your opponent, choose 1 |Bow| card in your Retreat Area and place it in your Bond Area.
+Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+---------------
+AM03-32
+false
+Pirate Marksman |ACT| |OPT| [|flip1|] Choose 1 non-Main Character enemy and move them. Until the end of the turn, that enemy cannot evade this unit's attack.
+Ullr's Holy Bloodline |SPEC| [Send 1 |Yellow| card from your Bond Area to the Retreat Area] If this card is sent to the Retreat Area, you may pay the cost and if you do: Choose 1 "Brigid" or "Patty" card in your Retreat Area and place it in your Bond Area.
+Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+---------------
+AM03-33
+false
+Heavens Archer |ACT| |OPT| Move this unit. This skill is only usable if this unit is untapped.
+Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+---------------
+AM03-34
+false
+Pirate Girl's Treasure |AUTO| [Send 1 Bond to the Retreat Area] When an ally's attack destroys an enemy, you may pay the cost and if you do: Draw 1 card.
+Thief Bearing the Blood of Ullr |AUTO| |OPT| If a card sent to the Retreat Area from the Bond Area by the cost of a skill is a |Bow|, you may add the top card of your Deck to your Bond Area face-down.
+---------------
+AM03-35
+false
+Awakening the Legendary Bow |AUTO| |Once Per Turn| When a |Bow| is placed in your Bond Area, until the end of the turn, this unit gains +30 attack.
+Bloodline of the Divine Markswoman |SPEC| When this card is sent from your Bond Area to the Retreat Area by the cost or effect of a |Bow| ally's skill, draw 1 card.
+Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+---------------
+AM03-36
+false
+Prince's Killer Bow |CONT| If this unit would Critical Hit, you may send 1 Bond card to the Retreat Area instead of sending a card with the same Unit Name as this unit to the Retreat Area.
+Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+---------------
+AM03-37
+false
+Blood of Ullr |SPEC| This card acquires |Bow| while in your Bond Area or Retreat Area.
+BS*Delivering the Divine Bow |AUTO| When this card is placed in your Bond Area, you may send 1 Bond to the Retreat Area. If you do, choose 1 non-"Edain" |Bow| card in your Retreat Area and place it in your Bond Area. This skill can only be used if you have a |Bow| ally.
+---------------
+AM03-38
+false
+Storm Lord's Mjolnir |ACT| |OPT| [Flip 1 "Reptor" or "Ishtar" Bond face-down] Choose 1 non-Main Character enemy and destroy them. Until the end of this unit's next combat, this unit may Critical Hit without sending 1 "Reptor" from your hand to the Retreat Area.
+Armor Expertise |CONT| If this unit is being attacked by a non-|Tome|, this unit gains +20 attack.
+---------------
+AM03-39
+true
+Foreseeing Impending Tragedy |SPEC| While you have a |Yellow| Bond card, if there are 3 or more enemies while you have no non-Main Character allies, this card's Deployment Cost in your hand becomes 1.
+Protection of Braggi |CONT| While there are more enemies than allies, your Main Character gains +20 attack.
+Holy Saint's Valkyrie Staff |ACT| |Once Per Turn| [Flip 1 "Claud" Bond card face-down] Choose 1 card in your Retreat Area or Boundless Area and place it in your Bond Area.
 ---------------

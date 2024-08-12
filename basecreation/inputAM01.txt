@@ -109,8 +109,8 @@ GS*Bonds |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] C
 AM01-21
 true
 Divine Golden Blade |ACT| |OPT| [Stack 1 “Ike” from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit gains +10 attack and acquires range 1-2.
-GS*Stalwarts Unite |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] Choose 1 ally with a Deployment Cost of 4 or higher. Until the end of the turn, the chosen ally gains +20 attack.
-Eternal Bond |ACT| |OPT| Choose 1 ally. Until the end of the turn, this unit acquires all |GS| possessed by that ally.
+GS*Stalwarts Unite |ACT| |OPT| [Send 1 card stacked under this unit to the Retreat Area] Choose 1 ally with a Deployment Cost of 4 or higher. Until the end of the turn, that ally gains +20 attack.
+Eternal Bond |ACT| |OPT| Choose 1 ally. Until the end of the turn, this unit acquires all |GS| possessed by that ally, however the acquired skills gain |OPT|.
 ---------------
 AM01-22
 true
@@ -136,6 +136,6 @@ GS*Adept Negotiator |ACT| |OPT| [Send 2 cards stacked underneath this unit to th
 ---------------
 AM01-26
 true
-Progenitor of Dawn |SPEC| While an ally's stack has 7 or more cards, the Deployment Cost of this card in your hand becomes 1.
+Progenitor of Dawn |SPEC| While an ally's stack has 5 or more cards, the Deployment Cost of this card in your hand becomes 1.
 Holy Empress |AUTO| [|flip2|] At the start of your turn, you may pay the cost and if you do: Destroy all non-Main Character enemies.
 Blazing Twin Blades |CONT| While this unit is in the Front Line, this unit gains +10 attack and acquires 1-2 range.

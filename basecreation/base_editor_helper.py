@@ -1,6 +1,7 @@
 from PIL import Image, ImageFont, ImageDraw, ImageFilter
 
 def skillname_text_creator(skillname, charwid, rowheight, rowextra, fontsize, color):
+    fontsize = 8
     # line character limit 60, pixel length is 1150
     bgcol = (25,13,100)
     if color == 'default':
