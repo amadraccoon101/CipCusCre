@@ -55,7 +55,7 @@ def createSkills(skills, cardName, border, fname):
     ### adding the skills
     # line character limit 60, pixel length is 1090
     # get rows
-    fontsize = 9
+    fontsize = 7
     font = ImageFont.truetype('georgiab.ttf', fontsize)
     charwid = 3
     rowheight = 12

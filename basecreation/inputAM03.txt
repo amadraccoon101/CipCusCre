@@ -37,7 +37,7 @@ Knightly Escort |AUTO| At the start of your opponent's turn, if this non-Main Ch
 AM03-08
 true
 Steward of the Crown Princess |CONT| If this unit Critical Hits, you may send a "Timerra" or "Merrin" card from your hand to the Retreat Area instead of a card with the same Unit Name as this unit.
-Balancing Rage and Elegance |AUTO| |Once Per Turn| [Flip 1 Bond face-down] When this unit Critical Hits, you may pay the cost and if you do: Draw 2 cards, then choose 1 card from your hand and send it to the Retreat Area.
+Balancing Rage and Elegance |AUTO| |OPT| [Flip 1 Bond face-down] When this unit Critical Hits, you may pay the cost and if you do: Draw 2 cards, then choose 1 card from your hand and send it to the Retreat Area.
 Whirlwind Swing |AUTO| When this unit Critical Hits, choose 1 enemy and move them.
 ---------------
 AM03-09
@@ -181,7 +181,7 @@ Thief Bearing the Blood of Ullr |AUTO| |OPT| If a card sent to the Retreat Area 
 ---------------
 AM03-35
 false
-Awakening the Legendary Bow |AUTO| |Once Per Turn| When a |Bow| is placed in your Bond Area, until the end of the turn, this unit gains +30 attack.
+Awakening the Legendary Bow |AUTO| |OPT| When a |Bow| is placed in your Bond Area, until the end of the turn, this unit gains +30 attack.
 Bloodline of the Divine Markswoman |SPEC| When this card is sent from your Bond Area to the Retreat Area by the cost or effect of a |Bow| ally's skill, draw 1 card.
 Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
 ---------------
@@ -204,5 +204,5 @@ AM03-39
 true
 Foreseeing Impending Tragedy |SPEC| While you have a |Yellow| Bond card, if there are 3 or more enemies while you have no non-Main Character allies, this card's Deployment Cost in your hand becomes 1.
 Protection of Braggi |CONT| While there are more enemies than allies, your Main Character gains +20 attack.
-Holy Saint's Valkyrie Staff |ACT| |Once Per Turn| [Flip 1 "Claud" Bond card face-down] Choose 1 card in your Retreat Area or Boundless Area and place it in your Bond Area.
+Holy Saint's Valkyrie Staff |ACT| |OPT| [Flip 1 "Claud" Bond card face-down] Choose 1 card in your Retreat Area or Boundless Area and place it in your Bond Area.
 ---------------

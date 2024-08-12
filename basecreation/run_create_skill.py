@@ -1,7 +1,7 @@
 from skillCreator import createSkills
 import sys, threading
 
-fname = "AM03ft9"
+fname = "AM03ft7"
 f = open("inputAM03.txt", "r", encoding="utf-8")
 
 nextline = f.readline()
