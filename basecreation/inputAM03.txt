@@ -122,13 +122,13 @@ Swordplay of the Connector |CONT| If this unit is attacked while he is Engaged, 
 ---------------
 AM03-24
 false
-Arrival of Emancipation Army |AUTO| When you Class Change into this unit, choose 1 |Fang| card with a Deployment Cost of 4 or lower and either stack it on top of an ally with the same Unit Name or add it to your hand.
+Arrival of Emancipation Army |AUTO| When you Class Change into this unit, choose 1 |Fang| card from your Retreat Area with a Deployment Cost of 4 or lower and either stack it on top of an ally with the same Unit Name or add it to your hand.
 Raid of the Emancipation Forces |AUTO| When this unit attacks, reveal cards from the top of your opponent's Deck equal to the amount of allies. Choose up to 1 of them and place it on top of your opponent's Deck and send the rest to the Retreat Area.
 Corsair's Rexflame |AUTO| When a card is sent to the Retreat Area from your opponent's Deck, until the end of the turn, for each card sent, this unit gains +10 attack.
 ---------------
 AM03-25
 false
-Guardsman of the Liberators |ACT| |OPT| Until the end of your opponent's next turn, this allied "Tormod", "Vika", and this unit gains +10 attack. This skill may only be used if you have an allied "Tormod" or "Vika".
+Guardsman of the Liberators |ACT| |OPT| Until the end of your opponent's next turn, allied "Tormod", "Vika", and this unit gains +10 attack. This skill may only be used if you have an allied "Tormod" or "Vika".
 Plundering Tiger Claw |AUTO| When this unit attacks, reveal the top card of your opponent's Deck. You may send that card to the Retreat Area.
 ---------------
 AM03-26
@@ -154,19 +154,19 @@ Grim Fate |SPEC| Treat this card as if its Unit Name is also "Bertram".
 ---------------
 AM03-30
 true
-Amiti's Gleam |ACT| |OPT| [|flip2|] Untap this unit.
-GS*Crimea's Heart |ACT| |OPT| [Send 2 cards stacked under this unit to the Retreat Area] Reveal the top 5 card of your Deck. Choose up to 1 |Green| card from among them and add it to your hand. Send the rest of the cards to the Retreat Area.
+Amiti's Gleam |ACT| |OPT| [|flip2|] Untap this unit. If an ally has used a |GS| this turn, choose up to 1 card in your Retreat Area with the same Unit Name as an ally and stack it under that ally to Growth them.
+GS*On Glory's Wings |ACT| |OPT| [Send 2 cards stacked under this unit to the Retreat Area] Reveal the top 5 card of your Deck. Choose up to 1 card from among them and add it to your hand and send the rest to the Retreat Area.
 ---------------
 AM03-31
 true
-Verdanite Forestwalker |CONT| While this unit is in the Front Line, this unit can attack enemies regardless of range.
-Bow of Life, Yewfelle |ACT| |OPT| [Flip 1 “Brigid” or “Febail” Bond face-down] Until the end of your opponent's next turn, this unit gains +20 attack. If you have as many as or fewer Bond cards than your opponent, choose 1 |Bow| card in your Retreat Area and place it in your Bond Area.
-Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
+Life-Giving Yewfelle |ACT| |OPT| [Flip 1 “Brigid” or “Febail” Bond face-down] Until the end of your opponent's next turn, this unit gains +20 attack. If you have as many as or fewer Bond cards than your opponent, choose 1 |Bow| card in your Retreat Area and place it in your Bond Area.
+Verdanite Forestwalker |AUTO| When this unit's "Life-Giving Yewfelle" triggers, if you have 4 or more Bond cards, until this unit leaves the Battlefield, he acquries the skill "|CONT| This unit may attack enemies in the Front Line regardless of range."
+Anti-Fliers |CONT| While attacking a |Flier|, this unit gains +30 attack.
 ---------------
 AM03-32
 false
 Pirate Marksman |ACT| |OPT| [|flip1|] Choose 1 non-Main Character enemy and move them. Until the end of the turn, that enemy cannot evade this unit's attack.
-Ullr's Holy Bloodline |SPEC| [Send 1 |Yellow| card from your Bond Area to the Retreat Area] If this card is sent to the Retreat Area, you may pay the cost and if you do: Choose 1 "Brigid" or "Patty" card in your Retreat Area and place it in your Bond Area.
+Ullr's Holy Bloodline |SPEC| [Send 1 |Yellow| card from your Bond Area to the Retreat Area] If this card is sent to the Retreat Area from your Bond Area, you may pay the cost and if you do: Choose 1 "Brigid" or "Patty" card in your Retreat Area and place it in your Bond Area.
 Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
 ---------------
 AM03-33
@@ -175,19 +175,19 @@ Heavens Archer |ACT| |OPT| Move this unit. This skill is only usable if this uni
 Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
 ---------------
 AM03-34
-false
+true
 Pirate Girl's Treasure |AUTO| [Send 1 Bond to the Retreat Area] When an ally's attack destroys an enemy, you may pay the cost and if you do: Draw 1 card.
 Thief Bearing the Blood of Ullr |AUTO| |OPT| If a card sent to the Retreat Area from the Bond Area by the cost of a skill is a |Bow|, you may add the top card of your Deck to your Bond Area face-down.
 ---------------
 AM03-35
-false
+true
 Awakening the Legendary Bow |AUTO| |OPT| When a |Bow| is placed in your Bond Area, until the end of the turn, this unit gains +30 attack.
 Bloodline of the Divine Markswoman |SPEC| When this card is sent from your Bond Area to the Retreat Area by the cost or effect of a |Bow| ally's skill, draw 1 card.
 Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
 ---------------
 AM03-36
-false
-Prince's Killer Bow |CONT| If this unit would Critical Hit, you may send 1 Bond card to the Retreat Area instead of sending a card with the same Unit Name as this unit to the Retreat Area.
+true
+Prince's Killer Bow |CONT| If this unit would Critical Hit, you may send 1 Bond card to the Retreat Area instead of sending a card with the same Unit Name as this unit to the Retreat Area. This skill may only be used if you have 1 or more |Yellow| |Bow| allies in the Front Line.
 Anti-Fliers |CONT| If this unit is attacking a |Flier|, this unit gains +30 attack.
 ---------------
 AM03-37
@@ -197,12 +197,27 @@ BS*Delivering the Divine Bow |AUTO| When this card is placed in your Bond Area, 
 ---------------
 AM03-38
 false
-Storm Lord's Mjolnir |ACT| |OPT| [Flip 1 "Reptor" or "Ishtar" Bond face-down] Choose 1 non-Main Character enemy and destroy them. Until the end of this unit's next combat, this unit may Critical Hit without sending 1 "Reptor" from your hand to the Retreat Area.
+Storm Lord's Mjölnir |ACT| |OPT| [Flip 1 "Reptor" or "Ishtar" Bond face-down] Until the end of this unit's next combat, this unit may Critical Hit without sending 1 "Blume" from your hand to the Retreat Area.
+Merciless Lightning |AUTO| When this unit's "Storm Lord's Mjölnir" triggers while you have 8 or more Bond cards, choose 1 non-Main Character enemy and destroy them.
 Armor Expertise |CONT| If this unit is being attacked by a non-|Tome|, this unit gains +20 attack.
 ---------------
 AM03-39
-true
-Foreseeing Impending Tragedy |SPEC| While you have a |Yellow| Bond card, if there are 3 or more enemies while you have no non-Main Character allies, this card's Deployment Cost in your hand becomes 1.
-Protection of Braggi |CONT| While there are more enemies than allies, your Main Character gains +20 attack.
+false
+Premonition of Impending Tragedy |SPEC| While you have a |Yellow| Bond card, if there are 3 or more enemies while you have no non-Main Character allies, this card's Deployment Cost in your hand becomes 0.
 Holy Saint's Valkyrie Staff |ACT| |OPT| [Flip 1 "Claud" Bond card face-down] Choose 1 card in your Retreat Area or Boundless Area and place it in your Bond Area.
+Braggi's Warmth |AUTO| When this unit's "Holy Saint's Valkyrie Staff" triggers, if you have 7 or more Bond cards, until the end of your opponent's next turn, enemies attacking your Main Character cannot Critical Hit.
+---------------
+AM03-40
+false
+Duty and Love |AUTO| When this unit is deployed, if you do not have a "Travant" or "Altena" Bond card, tap this unit.
+---------------
+AM03-41
+false
+Inherited Lightning Magic |AUTO| |OPT| When a |Tome| card is placed in your Bond Area, until the end of the turn, this unit gains +20 attack.
+---------------
+AM03-42
+true
+Emperor's Tyranny |AUTO| [Send 1 |Red| ally to the Boundless Area] At the start of your opponent's turn, you may pay the cost and if you do: Until the end of the turn, your opponent cannot deploy cards by a skill's effect.
+Darksphere's Aura |AUTO| When a card is sent to the Boundless Area, until the end of the turn, this unit gains +20 attack.
+Conqueror's Triumph |AUTO| [|flip1|] At the end of your turn, if this unit has 100 or more attack, you may pay the cost and if you do: Draw 1 card.
 ---------------

@@ -1,7 +1,7 @@
 from PIL import Image, ImageFont, ImageDraw
 from base_editor_helper import skillname_text_creator, get_rows, drawCharBorder   
 
-def createSkills(skills, cardName, border, fname):
+def createSkills(skills, cardName, border, fname, fntsize):
     ###############################################################################################################
     ###############################################################################################################
     #Parse Input
@@ -55,7 +55,7 @@ def createSkills(skills, cardName, border, fname):
     ### adding the skills
     # line character limit 60, pixel length is 1090
     # get rows
-    fontsize = 7
+    fontsize = fntsize
     font = ImageFont.truetype('georgiab.ttf', fontsize)
     charwid = 3
     rowheight = 12
