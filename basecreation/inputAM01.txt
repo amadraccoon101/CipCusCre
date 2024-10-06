@@ -115,7 +115,7 @@ AM01-22
 true
 Guiding Winds |ACT| |OPT| [|flip1|, Stack 1 “Soren” from your Retreat Area under this unit to Growth him] Until the end of the turn, this unit gains +20 attack. If you have 3 or fewer cards in your hand, draw 1 card.
 The Devoted |AUTO| |OPT| [|flip1|] When an allied "Ike" is Growthed, you may pay the cost and if you do: Stack 1 "Soren" from your Retreat Area under this unit to Growth him.
-GS*Roaring Rexcalibur |ACT| [Send 2 cards stacked under this unit to the Retreat Area] Choose 1 non-Main Character enemy. Your opponent places that card at the bottom of their deck. (If there are multiple cards in the enemy’s stack, your opponent places them in any order.)
+GS*Roaring Rexcalibur |ACT| [Send 2 cards stacked under this unit to the Retreat Area] Choose 1 non-Main Character enemy. Your opponent places that card at the bottom of their deck.
 ---------------
 AM01-23
 true
@@ -124,7 +124,7 @@ Heartwarming Radiance |ACT| |OPT| [Tap 1 other |Green| ally] If you have 3 or mo
 GS*Cheerful Smile |ACT| |OPT| [Send 2 cards under this unit to the Retreat Area] Choose 1 |Green| ally with a Deployment Cost of 2 or lower from your Retreat Area and deploy them.
 ---------------
 AM01-24
-false
+true
 His Fathers’ Son |CONT| During your turn, this unit and allied “Ike” gain +10 attack.
 GS*Bequeathed Aether |AUTO| [|flip1|, Send 2 cards stacked under this unit to the Retreat Area] When this unit or an allied "Ike" attacks your opponent’s Main Character, you may pay the cost and if you do: Choose up to 2 non-Main Character enemies and destroy them. Until the end of your opponent’s next turn, the attacking unit gains +20 attack.
 ---------------

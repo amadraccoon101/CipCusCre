@@ -60,7 +60,7 @@ def createSkills(skills, cardName, border, fname, fntsize):
     charwid = 3
     rowheight = 12
     rowextra = 2
-    rowlen = 290
+    rowlen = 285
     rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, rowlen-25)
     print("ROWS:")
     print(rows)
