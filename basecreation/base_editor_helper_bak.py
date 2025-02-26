@@ -17,9 +17,9 @@ def skillname_text_creator(skillname, charwid, rowheight, rowextra, fontsize, co
         #     x,y = skillicon.size
         #print("GS ICON SIZE")
         #print(x)
-        im = Image.new('RGBA', (x + int(font.getlength(namesplit[1]))+3, rowheight), color=(255,255,255,0)) # clear strip
-        im0 = Image.new(mode = "RGBA", size = (x + int(font.getlength(namesplit[1])), rowheight-2), color=bgcol)  # background color strip
-        image = Image.new(mode = "RGBA", size = (x + int(font.getlength(namesplit[1])), rowheight), color=(255,255,255))  # white strip
+        im = Image.new('RGBA', (x + font.getsize(namesplit[1])[0]+3, rowheight), color=(255,255,255,0)) # clear strip
+        im0 = Image.new(mode = "RGBA", size = (x + font.getsize(namesplit[1])[0], rowheight-2), color=bgcol)  # background color strip
+        image = Image.new(mode = "RGBA", size = (x + font.getsize(namesplit[1])[0], rowheight), color=(255,255,255))  # white strip
         im.paste(image, (3,0), image)
         im.paste(im0, (3,1), im0)
         draw = ImageDraw.Draw(im)
@@ -32,14 +32,14 @@ def skillname_text_creator(skillname, charwid, rowheight, rowextra, fontsize, co
         #im = Image.new(mode = "RGB", size = (int(charwid*len(skillname)) + 10, rowheight + rowextra), color=bgcol)
         #print('rowheight')
         #print(rowheight)
-        im = Image.new(mode = "RGBA", size = (int(font.getlength(skillname)),rowheight), color=(255,255,255))
-        im0 = Image.new(mode = "RGBA", size = (int(font.getlength(skillname)),rowheight-2), color=bgcol)
+        im = Image.new(mode = "RGBA", size = (font.getsize(skillname)[0],rowheight), color=(255,255,255))
+        im0 = Image.new(mode = "RGBA", size = (font.getsize(skillname)[0],rowheight-2), color=bgcol)
         im.paste(im0, (0,1), im0)
         draw = ImageDraw.Draw(im)
         #draw.text((5,2), skillname, (255, 255, 255), font=font)
         draw.text((1,0), skillname, (255, 255, 255), font=font)
-        #print(int(font.getlength(skillname)[0]) + 20)
-        if (int(font.getlength(skillname)) + 6) > 280:
+        #print(int(font.getsize(skillname)[0]) + 20)
+        if (int(font.getsize(skillname)[0]) + 6) > 280:
             #print('enter')
             im = im.resize((280,rowheight+rowextra))
         im.save("skillname.png", quality=95)
@@ -81,14 +81,14 @@ def get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, r
                     j = 0
                     while j < len(strskl):
                         # decreasing row length per character
-                        rowlen = rowlen - (int(font.getlength(strskl[j])))
+                        rowlen = rowlen - (int(font.getsize(strskl[j])[0]))
                         if rowlen < 0:
                             rowlen = 1150
                             rows = rows + 1
-                            rowlen = rowlen - (int(font.getlength(strskl[j])))
+                            rowlen = rowlen - (int(font.getsize(strskl[j])[0]))
                         else:
                             # accounting for the space after each word
-                            rowlen = rowlen - int(font.getlength(' '))
+                            rowlen = rowlen - int(font.getsize(' ')[0])
                         j = j + 1
                 idx = idx + 1
             rows = rows + 1

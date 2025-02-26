@@ -1,7 +1,7 @@
 from PIL import Image, ImageFont, ImageDraw
 from base_editor_helper import skillname_text_creator, get_rows, drawCharBorder   
 
-def createSkills(skills, cardName, border, fname, fntsize):
+def createSkills(skills, cardName, border):
     ###############################################################################################################
     ###############################################################################################################
     #Parse Input
@@ -23,12 +23,12 @@ def createSkills(skills, cardName, border, fname, fntsize):
     ###############################################################################################################
     #Constants
     ###############################################################################################################
-    skillatr = ['lis','bs','hs','es','cp','db','dv','ts','fs','ccs','cf','gs','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
+    skillatr = ['lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','gs','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7']
     skilltypes = ['act','auto','cont','bond','spec','supp','hand']
 
     attributes = ['armor','axe','beast','black','blue','bow','brawl','brown','dragon','dragonstone','knife',
-                'fang','female','flier','green','lance','male','mirage','monster','purple','red', 'cyan',
-                'staff','sword','tome','white','yellow','emblem',
+                'fang','female','flier','green','lance','male','mirage','monster','purple','red',
+                'staff','sword','tome','white','yellow',
                 'act','auto','cont','bond','spec','supp','hand','opt',
                 #'lis','bs','hs','cp','db','dv','ts','fs','ccs','cf','us','is','as','lvs2','lvs3','lvs4','lvs5','lvs7',
                 'flip1','flip2','flip3','flip4','flip5','tap']
@@ -55,12 +55,12 @@ def createSkills(skills, cardName, border, fname, fntsize):
     ### adding the skills
     # line character limit 60, pixel length is 1090
     # get rows
-    fontsize = fntsize
+    fontsize = 9
     font = ImageFont.truetype('georgiab.ttf', fontsize)
-    charwid = 3
+    charwid = 4
     rowheight = 12
     rowextra = 2
-    rowlen = 285
+    rowlen = 290
     rows = get_rows(skills, charwid, rowheight, rowextra, fontsize, attributes, font, rowlen-25)
     print("ROWS:")
     print(rows)
@@ -107,6 +107,17 @@ def createSkills(skills, cardName, border, fname, fntsize):
                     if border == False:
                         imskl = Image.open('icons_borderless/'+ skltxt +'.png')
                     x,y = imskl.size
+                    # if y > rowheight:
+                    #     #print(y)
+                    #     ratio = rowheight/y
+                    #     imskl = imskl.resize((int(ratio * x),rowheight))
+                    #     x,y = imskl.size
+                    #     print("skill x: " + str(x))
+                    #     print("skill y: " + str(y))
+                    # elif y < rowheight:
+                    #     ratio = rowheight/y
+                    #     imskl = imskl.resize((int(ratio * x),rowheight))
+                    #     x,y = imskl.size
                     xpos = xpos + x
                     ypos = ypos - rowextra
                     print(skilltext[idx].lower())
@@ -179,4 +190,4 @@ def createSkills(skills, cardName, border, fname, fntsize):
     fontsize = 30
     font = ImageFont.truetype('Cousine-Regular.ttf', 30)
 
-    output.save("output/" + fname + "/" + cardName + ".png", quality=95)
+    output.save("output/" + cardName + ".png", quality=95)
